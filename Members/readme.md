@@ -31,6 +31,7 @@ This document outlines the responsibilities and areas of expertise for each team
   - Use Node.js, Express.js, MongoDB, and Mongoose for server-side development.
   - Implement RESTful APIs and database integration.
   - Handle authentication and authorization using JWT.
+  - Use of SMTP.
 - Front-End Development:
   - Collaborate with the team to develop the front-end using HTML, CSS, and JavaScript.
   - Contribute to the user interface and user experience design.
@@ -43,6 +44,7 @@ This document outlines the responsibilities and areas of expertise for each team
 - Backend Development:
   - Use Node.js, Express.js, MongoDB, and Mongoose for server-side development.
   - Implement RESTful APIs and database integration.
+  - Use of websockets for Chatting and reviews section in Mess.
 - Front-End Development:
   - Collaborate with the team to develop the front-end using HTML, CSS, and JavaScript.
   - Contribute to the user interface and user experience design.
