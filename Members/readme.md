@@ -62,4 +62,4 @@ This document outlines the responsibilities and areas of expertise for each team
 **Responsibilities:**
 - Collaborate with the team to develop the front-end of the web application.
 - Contribute to HTML, CSS, and JavaScript development.
-- Assist in creating an intuitive and visually appealing user interface.
+- Implement responsive designs to ensure optimal user experience.

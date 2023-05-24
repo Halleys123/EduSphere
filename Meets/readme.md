@@ -43,7 +43,7 @@ The purpose of this meeting was to discuss the features to add in the web app an
 - Himanshu
 
 **Description:**
-The purpose of this meeting was to show the design created by Arnav to Anubhav and discuss any modifications or improvements.
+The purpose of this meeting was to show the design to Anubhav and discuss any modifications or improvements.
 
 **Discussion Summary:**
 - Arnav presented the design of the web app to Anubhav.
@@ -61,7 +61,7 @@ The purpose of this meeting was to show the design created by Arnav to Anubhav a
 - Samee
 
 **Description:**
-The purpose of this meeting was to show the design created by Arnav to Samee and gather feedback.
+The purpose of this meeting was to show the design to Samee and gather feedback.
 
 **Discussion Summary:**
 - Arnav presented the design of the web app to Samee.
