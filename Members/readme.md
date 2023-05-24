@@ -55,7 +55,7 @@ This document outlines the responsibilities and areas of expertise for each team
 
 ## Gaurika
 
-**Role:** Front-End Developer (Possibly)
+**Role:** Front-End Developer
 
 **Responsibilities:**
 - Collaborate with the team to develop the front-end of the web application.
