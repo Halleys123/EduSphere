@@ -1,0 +1,84 @@
+$background: #10112a;
+$background-light: #1e1f4b;
+$background-lighter: #d6d4eb;
+$background-lightest: #f1fcff;
+
+$textColor: #0f193d;
+
+$bar-one: #d4d5eb;
+$bar-two: #ebd8d4;
+$bar-three: #ffecba;
+$bar-four: #d4ebd4;
+
+$primary: #b18256;
+$primary-light: #fff2e7;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+
+body {
+  //   background-color:
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $background;
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.main {
+  width: 80%;
+  height: 100%;
+  background-color: $background-light;
+  display: flex;
+  &__nav {
+    width: 100%;
+    height: 10.8rem;
+    background-color: $background;
+    display: flex;
+    flex-direction: row;
+    &__pageName {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.2rem;
+      width: fit-content;
+      height: 100%;
+      &--text {
+        font-size: 2.7rem;
+        color: white;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+      }
+      &--iconBox > svg {
+        fill: white;
+      }
+    }
+  }
+}
