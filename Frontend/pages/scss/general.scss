@@ -43,11 +43,72 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: $background;
+  &__options {
+    // margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    // padding: 3.2rem;
+    &__listitems {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-self: left;
+      color: $textColor;
+      border-radius: 0 1.2rem 1.2rem 0;
+      margin-bottom: 2rem;
+      width: 22rem;
+      height: 4.2rem;
+      // gap: 0.8rem;
+      background-color: $primary-light;
+    }
+  }
+
   &__tabs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    &__upper {
+      margin-top: 6.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+      margin-bottom: 8.2rem;
+      // padding: 0 3.2rem;
+
+      &__listitems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: left;
+        color: $textColor;
+        border-radius: 0 1.2rem 1.2rem 0;
+        margin-bottom: 2rem;
+        width: 22rem;
+        height: 4.2rem;
+        gap: 0.8rem;
+        background-color: $primary-light;
+      }
+    }
+  }
+  &__logo {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__img {
+      width: 9rem;
+      height: 8rem;
+    }
+    &__text {
+      color: white;
+      font-weight: 600;
+      font-size: 2.4rem;
+    }
   }
 }
 .main {
