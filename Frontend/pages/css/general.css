@@ -47,6 +47,36 @@ html {
   background-color: #10112a;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+.main__nav__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  color: white;
+}
+.main__nav__right__search {
+  width: 23rem;
+  height: 4.8rem;
+}
+.main__nav__right__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+.main__nav__right__info__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__nav__right__info__user__img {
+  height: 4rem;
+  width: 4rem;
 }
 .main__nav__pageName {
   display: flex;

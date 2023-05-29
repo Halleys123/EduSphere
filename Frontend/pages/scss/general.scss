@@ -61,6 +61,36 @@ html {
     background-color: $background;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    &__right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.4rem;
+      color: white;
+      &__search {
+        width: 23rem;
+        height: 4.8rem;
+      }
+      &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+        &__user {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          &__img {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+      }
+    }
     &__pageName {
       display: flex;
       flex-direction: row;
