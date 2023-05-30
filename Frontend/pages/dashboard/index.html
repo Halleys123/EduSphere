@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard | Username</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
 
   <body>
     <aside class="left">
       <div class="left__logo">
-        <img class="left__logo__img" src="../../icons/mainIcon.png" />
+        <div class="left__logo__img">
+          <img class="left__logo__img" src="../../icons/mainIcon.png" />
+        </div>
         <div class="left__logo__text">Edusphere</div>
       </div>
       <div class="left__tabs">
@@ -106,10 +114,11 @@
         </ul>
       </div>
     </aside>
+
     <main class="main">
       <div class="main__nav">
         <div class="main__nav__pageName">
-          <p class="main__nav__pageName--text">Your text here</p>
+          <p class="main__nav__pageName--text">Dashboard</p>
           <div class="main__nav__pageName--iconBox">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +128,196 @@
             >
               <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
             </svg>
+          </div>
+        </div>
+
+        <div class="main__nav__right">
+          <input
+            class="main__nav__right--search"
+            type="text"
+            placeholder="Search"
+          />
+          <div class="main__nav__right--bell">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                d="M160-200v-60h84v-306q0-84 49.5-149.5T424-798v-29q0-23 16.5-38t39.5-15q23 0 39.5 15t16.5 38v29q81 17 131 82.5T717-566v306h83v60H160Zm320-295Zm0 415q-32 0-56-23.5T400-160h160q0 33-23.5 56.5T480-80ZM304-260h353v-306q0-74-51-126t-125-52q-74 0-125.5 52T304-566v306Z"
+              />
+            </svg>
+          </div>
+          <div class="main__nav__right--account">
+            <img
+              class="main__nav__right--account--icon"
+              src="../../icons/account.svg"
+            />
+            <div>
+              <p class="main__nav__right--account--name">Anubhav Mishra</p>
+              <p class="main__nav__right--account--mail">22bcs018@nith.ac.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="main__content">
+          <div class="main__content__timetable">
+            <div class="main__content__timetable--head">
+              <h2>Time Table</h2>
+              <div class="main__content__timetable--head--side">
+                <h2>This Week</h2>
+                <div class="main__content__timetable--head--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 -960 960 960"
+                    width="32"
+                  >
+                    <path
+                      d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="main__content__timetable--table"></div>
+          </div>
+
+          <div class="main__content__assignments">
+            <div class="main__content__assignments--head">Assignments</div>
+            <div class="main__content__assignments--content">
+              <div class="main__content__assignments--content--icon">
+                <img src="../../icons/chem.png" />
+              </div>
+              <div class="main__content__assignments--content--text>">
+                <p class="main__content__assignments--content--text--subject">
+                  Chemistry
+                </p>
+                <p class="main__content__assignments--content--text--date">
+                  On 8th March 2023
+                </p>
+              </div>
+            </div>
+            <div class="main__content__assignments--content">
+              <div class="main__content__assignments--content--icon">
+                <img src="../../icons/math.svg" />
+              </div>
+              <div class="main__content__assignments--content--text>">
+                <p class="main__content__assignments--content--text--subject">
+                  Mathematics
+                </p>
+                <p class="main__content__assignments--content--text--date">
+                  On 8th March 2023
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__content__annoucements">
+            <div class="main__content__annoucements--head">Announcements</div>
+            <div class="main__content__annoucements--content">
+              <div class="main__content__annoucements--content--icon">
+                <img src="../../icons/account.svg" />
+              </div>
+              <div class="main__content__annoucements--content--text>">
+                <p class="main__content__annoucements--content--text--subject">
+                  From CR
+                </p>
+                <p class="main__content__annoucements--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+            <div class="main__content__annoucements--content">
+              <div class="main__content__annoucements--content--icon">
+                <img src="../../icons/announcement.svg" />
+              </div>
+              <div class="main__content__annoucements--content--text>">
+                <p class="main__content__annoucements--content--text--subject">
+                  Auto Generated
+                </p>
+                <p class="main__content__annoucements--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+          </div>
+
+          <div class="main__content__Complaints">
+            <div class="main__content__Complaints--head">Complaints</div>
+            <div class="main__content__Complaints--content">
+              <div class="main__content__Complaints--content--icon">
+                <img src="../../icons/notification.svg" />
+              </div>
+              <div class="main__content__Complaints--content--text>">
+                <p class="main__content__Complaints--content--text--subject">
+                  From CR
+                </p>
+                <p class="main__content__Complaints--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+            <div class="main__content__Complaints--content">
+              <div class="main__content__Complaints--content--icon">
+                <img src="../../icons/notification.svg" />
+              </div>
+              <div class="main__content__Complaints--content--text>">
+                <p class="main__content__Complaints--content--text--subject">
+                  Auto Generated
+                </p>
+                <p class="main__content__Complaints--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+            <div class="main__content__Complaints--content">
+              <div class="main__content__Complaints--content--icon">
+                <img src="../../icons/notification.svg" />
+              </div>
+              <div class="main__content__Complaints--content--text>">
+                <p class="main__content__Complaints--content--text--subject">
+                  From CR
+                </p>
+                <p class="main__content__Complaints--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+            <div class="main__content__Complaints--content">
+              <div class="main__content__Complaints--content--icon">
+                <img src="../../icons/notification.svg" />
+              </div>
+              <div class="main__content__Complaints--content--text>">
+                <p class="main__content__Complaints--content--text--subject">
+                  Auto Generated
+                </p>
+                <p class="main__content__Complaints--content--text--date">
+                  HS Class shifted from 2pm to 5pm
+                </p>
+              </div>
+              <button>Clear</button>
+            </div>
+
+            <div class="main__content__Complaints--content--newcomplaint">
+              <div><img src="../../icons/plus sign.svg"</div>
+              <p>Add New Complaint</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__content__attendance">
+          <div class="main__content__attendance--head">
+            <h2>Attendence Report</h2>
+            <div class="main__content__attendance--head--side">
+              <h2>Monthly|Weakly</h2>
+            </div>
           </div>
         </div>
       </div>
