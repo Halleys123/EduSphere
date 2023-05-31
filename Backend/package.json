@@ -1,0 +1,29 @@
+{
+  "name": "edusphere",
+  "version": "1.0.0",
+  "description": "Application for managing tasks and announcements that happen in college by Team EduSphere",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halleys123/EduSphere.git"
+  },
+  "keywords": [
+    "EduSphere"
+  ],
+  "author": "Team EduSphere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halleys123/EduSphere/issues"
+  },
+  "homepage": "https://github.com/Halleys123/EduSphere#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
