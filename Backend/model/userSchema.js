@@ -106,27 +106,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// const assignmentSchema = new mongoose.Schema({
-//     subject: {
-//         type: [
-//             {
-//                 name: {
-//                     type: String,
-//                     required: [true, "Please provide the subject name!"],
-//                     trim: true,
-//                     maxlength: [40, "A name must have less or equal then 40 characters"],
-//                     minlength: [3, "A name must have more or equal then 3 characters"],
-//                 },
-//                 subjectCode: {
-//                     type: String,
-//                     required: [true, "Please provide the subject code!"],
-//                     trim: true,
-//                     maxlength: [8, "A name must have less or equal then 40 characters"],
-//                     minlength: [2, "A name must have more or equal then 3 characters"],
-//                 },
-
-//         ],
-
-const User = mongoose.model("sections", userSchema);
-
-module.exports = User;
+module.exports = userSchema;
