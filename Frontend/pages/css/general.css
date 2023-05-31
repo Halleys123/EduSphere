@@ -61,19 +61,14 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 90%;
 }
 .left__tabs__upper {
   margin-top: 6.2rem;
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-self: center;
   margin-bottom: 90%;
-}
-.left__tabs__upper__list {
-  width: 100%;
 }
 .left__tabs__upper__listitems {
   display: flex;
@@ -82,15 +77,9 @@ html {
   justify-self: left;
   color: #0f193d;
   border-radius: 0 1.2rem 1.2rem 0;
-<<<<<<< HEAD
-  margin-bottom: 2rem;
-  width: 100%;
-  height: 5.2rem;
-=======
   margin-bottom: 10%;
   width: 150%;
   height: 20%;
->>>>>>> arnav
   gap: 0.8rem;
   background-color: #fff2e7;
 }
@@ -125,40 +114,7 @@ html {
   display: flex;
   flex: 1 0;
   flex-direction: row;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-}
-.main__nav__right {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  gap: 2.4rem;
-  color: white;
-}
-.main__nav__right__search {
-  width: 23rem;
-  height: 4.8rem;
-}
-.main__nav__right__info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.2rem;
-}
-.main__nav__right__info__user {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.main__nav__right__info__user__img {
-  height: 4rem;
-  width: 4rem;
-=======
-  justify-content: space-between;
->>>>>>> arnav
 }
 .main__nav__pageName {
   display: flex;
