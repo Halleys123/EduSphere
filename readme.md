@@ -20,33 +20,44 @@ Edusphere offers the following key features:
     
 8.  **Complaints Management:** Provide a platform for students to lodge complaints regarding any issues they encounter. Track and resolve complaints efficiently, ensuring student satisfaction.
 
-## Installation
+## Getting Started
 To set up the Edusphere College Management System locally, follow these steps:
 
-1. Clone the Repository
+1. Pull The repository to the folder you want to work in
 
 ```bash
-git clone https://github.com/your-username/edusphere.git
+git pull https://github.com/Halleys123/EduSphere
 ```
 
-2. Navigate to the project directory:
+2. Create a new branch
 ```bash
-cd EduSphere
+git branch -c "Your name here"
 ```
 
-3. Install the dependencies: 
+3. Switch to Your branch
 ```bash
-npm install
+git switch "Your name"
 ```
 
-4. Configure the database connection in the `config.js` file.
-5. Start the application
+4. Work on your branch
+5. After you are done with the task create a pull request on master branch
 
 ```bash
-npm start
+git pull origin master
 ```
 
-6. 1.  Open a web browser and visit `http://localhost:3000` to access the Edusphere application.
+6. Merge your branch to master branch.
+```bash
+git switch "Your name"
+```
+
+```bash
+git merge master
+```
+7. Push the master branch
+```bash
+git push origin master
+```
 
 ## Technologies Used
 
