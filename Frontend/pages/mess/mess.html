@@ -1,384 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Username</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/dashboard.css" />
-    <link rel="stylesheet" href="../css/mess.css" />
-  </head>
 
-  <body>
-    <aside class="left">
-      <div class="left__logo">
-        <div class="left__logo__img">
-          <img class="left__logo__img" src="../../icons/mainIcon.png" />
-        </div>
-        <div class="left__logo__text">Edusphere</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Username</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="../css/general.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+  <link rel="stylesheet" href="../css/mess.css" />
+</head>
+
+<body>
+
+  <aside class="left">
+    <div class="left__logo">
+      <div class="left__logo__imgBox">
+
+        <img src="../../icons/mainIcon.png" alt="logo" class="left__logo__imgBox--img">
       </div>
-      <div class="left__tabs">
-        <!-- <div class="left__tabs"></div> -->
-        <div class="left__tabs__upper">
-          <ul class="left__tabs__upper__list">
-            <li class="left__tabs__upper__listitems">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48"
-                viewBox="0 -960 960 960"
-                width="48"
-              >
-                <path
-                  d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-                />
-              </svg>
-              <h2>Dashboard</h2>
-            </li>
-            <li class="left__tabs__upper__listitems">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48"
-                viewBox="0 -960 960 960"
-                width="48"
-              >
-                <path
-                  d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-                />
-              </svg>
-              <h2>Classes</h2>
-            </li>
-            <li class="left__tabs__upper__listitems">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48"
-                viewBox="0 -960 960 960"
-                width="48"
-              >
-                <path
-                  d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-                />
-              </svg>
-              <h2>Hostel</h2>
-            </li>
-            <li class="left__tabs__upper__listitems">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48"
-                viewBox="0 -960 960 960"
-                width="48"
-              >
-                <path
-                  d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-                />
-              </svg>
-              <h2>Feedback</h2>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="left__options">
-        <ul class="left__options__list">
-          <li class="left__options__listitems">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="48"
-              viewBox="0 -960 960 960"
-              width="48"
-            >
+      <p class="left__logo--text">.WebFlow</p>
+    </div>
+
+    <div class="left__navi">
+      <div class="left__navi__top left__navi__item">
+
+        <div class="left__navi__top__item left__navi__item__item">
+          <div class="left__navi__top__item__iconBox left__navi__item__item__iconBox">
+            <svg class="left__navi__top__item__iconBox--icon left__navi__item__item__iconBox--icon"
+              xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
               <path
-                d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-              />
-            </svg>
-            <h2>Logout</h2>
-          </li>
-          <li class="left__options__listitems">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="48"
-              viewBox="0 -960 960 960"
-              width="48"
-            >
-              <path
-                d="M160-160v-440h140v440H160Zm250 0v-640h140v640H410Zm250 0v-280h140v280H660Z"
-              />
-            </svg>
-            <h2>College</h2>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <main class="main">
-      <div class="main__nav">
-        <div class="main__nav__pageName">
-          <p class="main__nav__pageName--text">Dashboard</p>
-          <div class="main__nav__pageName--iconBox">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32"
-              viewBox="0 -960 960 960"
-              width="32  "
-            >
-              <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
             </svg>
           </div>
+          <span>Dashboard</span>
         </div>
 
-        <div class="main__nav__right">
-          <input
-            class="main__nav__right--search"
-            type="text"
-            placeholder="Search"
-          />
-          <div class="main__nav__right--bell">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32"
-              viewBox="0 -960 960 960"
-              width="32"
-            >
+
+        <div class="left__navi__top__item left__navi__item__item">
+          <div class="left__navi__top__item__iconBox left__navi__item__item__iconBox">
+            <svg class="left__navi__top__item__iconBox--icon left__navi__item__item__iconBox--icon"
+              xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
               <path
-                d="M160-200v-60h84v-306q0-84 49.5-149.5T424-798v-29q0-23 16.5-38t39.5-15q23 0 39.5 15t16.5 38v29q81 17 131 82.5T717-566v306h83v60H160Zm320-295Zm0 415q-32 0-56-23.5T400-160h160q0 33-23.5 56.5T480-80ZM304-260h353v-306q0-74-51-126t-125-52q-74 0-125.5 52T304-566v306Z"
-              />
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
             </svg>
           </div>
-          <div class="main__nav__right--account">
-            <img
-              class="main__nav__right--account--icon"
-              src="../../icons/account.svg"
-            />
-            <div>
-              <p class="main__nav__right--account--name">Anubhav Mishra</p>
-              <p class="main__nav__right--account--mail">22bcs018@nith.ac.in</p>
+          <span>Classes</span>
+        </div>
+
+
+        <div class="left__navi__top__item left__navi__item__item">
+          <div class="left__navi__top__item__iconBox left__navi__item__item__iconBox">
+            <svg class="left__navi__top__item__iconBox--icon left__navi__item__item__iconBox--icon"
+              xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
+            </svg>
+          </div>
+          <span>Hostel</span>
+        </div>
+
+
+        <div class="left__navi__top__item left__navi__item__item">
+          <div class="left__navi__top__item__iconBox left__navi__item__item__iconBox">
+            <svg class="left__navi__top__item__iconBox--icon left__navi__item__item__iconBox--icon"
+              xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
+            </svg>
+          </div>
+          <span>College</span>
+        </div>
+      </div>
+
+      <div class="left__navi__bottom left__navi__item">
+
+        <div class="left__navi__item__item left__navi__bottom__item">
+          <div class="left__navi__item__item__iconBox left__navi__bottom__item__iconBox">
+            <svg class="left__navi__item__item__iconBox--icon left__navi__bottom__item__iconBox--icon xmlns="
+              http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
+            </svg>
+          </div>
+          <span>Feedback</span>
+        </div>
+
+        <div class="left__navi__item__item left__navi__bottom__item">
+          <div class="left__navi__item__item__iconBox left__navi__bottom__item__iconBox">
+            <svg class="left__navi__item__item__iconBox--icon left__navi__bottom__item__iconBox--icon xmlns="
+              http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <path
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
+            </svg>
+          </div>
+          <span>Log Out</span>
+        </div>
+
+      </div>
+    </div>
+
+  </aside>
+
+  <main class="main">
+    <div class="main__nav">
+      <div class="main__nav__pageName">
+        <p class="main__nav__pageName--text">Dashboard</p>
+        <div class="main__nav__pageName__iconBox">
+          <svg class="main__nav__pageName__iconBox--icon" xmlns="http://www.w3.org/2000/svg" height="32"
+            viewBox="0 -960 960 960" width="32  ">
+            <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="main__nav__right">
+        <div class="main__nav__right__search">
+          <div class="main__nav__right__search__iconBox">
+
+            <svg class="main__nav__right__search__iconBox--icon" xmlns="http://www.w3.org/2000/svg" height="48"
+              viewBox="0 -960 960 960" width="48">
+              <path
+                d="M222-80q-43.75 0-74.375-30.625T117-185v-125h127v-570l59.8 60 59.8-60 59.8 60 59.8-60 59.8 60 60-60 60 60 60-60 60 60 60-60v695q0 43.75-30.625 74.375T738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h389v125q0 20 12.5 32.5T738-140ZM357-622v-60h240v60H357Zm0 134v-60h240v60H357Zm333-134q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" />
+            </svg>
+          </div>
+
+          <input class="main__nav__right__search__box" type="text" placeholder="Search" />
+        </div>
+        <div class="main__nav__right__right">
+
+          <div class="main__nav__right__right__bellBox">
+            <svg class="main__nav__right__right__bellBox--bell" xmlns="http://www.w3.org/2000/svg" height="32"
+              viewBox="0 -960 960 960" width="32">
+              <path
+                d="M160-200v-60h84v-306q0-84 49.5-149.5T424-798v-29q0-23 16.5-38t39.5-15q23 0 39.5 15t16.5 38v29q81 17 131 82.5T717-566v306h83v60H160Zm320-295Zm0 415q-32 0-56-23.5T400-160h160q0 33-23.5 56.5T480-80ZM304-260h353v-306q0-74-51-126t-125-52q-74 0-125.5 52T304-566v306Z" />
+            </svg>
+          </div>
+          <div class="main__nav__right__right__account">
+            <div class="main__nav__right__right__account__imgBox">
+
+              <img class="main__nav__right__right__account__imgBox--icon" src="mainIcon.png" />
+            </div>
+            <div class="main__nav__right__right__account__details">
+              <p class="main__nav__right__right__account__details--name">Anubhav Mishra</p>
+              <p class="main__nav__right__right__account__details--mail">22bcs018@nith.ac.in</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="box">
-        <div class="main__content">
-          <div class="main__content__menu">
-            <div class="main__content__menu--head">
-              <h2>Menu</h2>
-              <div class="main__content__menu--head--side">
-                <h2>Today</h2>
-                <div class="main__content__menu--head--icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32"
-                    viewBox="0 -960 960 960"
-                    width="32"
-                  >
-                    <path
-                      d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="main__content__menu--item">
-              <div class="main__content__menu--item--image">
-                <img src="../../images/food1.jpg" />
-              </div>
-              <div class="main__content__menu--item--des">
-                <div>Breakfast</div>
-                <div>
-                  <h2>Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <div>
-                  <h2>Non-Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <button>Rate Now</button>
-              </div>
-            </div>
-            <div class="main__content__menu--item">
-              <div class="main__content__menu--item--image">
-                <img src="../../images/food3.jpg" />
-              </div>
-              <div class="main__content__menu--item--des">
-                <div>Breakfast</div>
-                <div>
-                  <h2>Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <div>
-                  <h2>Non-Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <button>Rate Now</button>
-              </div>
-            </div>
-            <div class="main__content__menu--item">
-              <div class="main__content__menu--item--image">
-                <img src="../../images/food 2.jpg" />
-              </div>
-              <div class="main__content__menu--item--des">
-                <div>Breakfast</div>
-                <div>
-                  <h2>Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <div>
-                  <h2>Non-Veg</h2>
-                  <p>Veg items to eat in some proper way</p>
-                </div>
-                <button>Rate Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="main__content__updates">
-            <div class="main__content__updates--head">Updates</div>
-            <div class="main__content__updates--content">
-              <div class="main__content__updates--content--icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="48"
-                  viewBox="0 -960 960 960"
-                  width="48"
-                >
-                  <path
-                    d="M479-40 298-408q-69 12-123.5-30T120-555q0-45 27.5-88t80.5-58q16-99 88.5-159T480-920q91 0 163 60t89 159q53 15 80.5 58t27.5 88q0 75-56.5 117T664-408L479-40ZM266-465q18 0 34-5t25-14l26-27 23 20q25 17 54.5 21.5T483-465q25 0 51-4.5t51-21.5l24-20 25 27q9 9 25.5 14t33.5 5q34 0 60.5-27.5T780-555q0-31-19-54t-54-29l-35-5-2-39q-11-79-61.5-128.5T480-860q-78 0-129 49.5T290-682l-3 39-35 8q-30 8-51 28.5T180-555q0 35 26.5 62.5T266-465Zm213 289 128-252-6-6q-28 15-60.5 22t-57.5 7q-32 0-65-7t-58-22l-6 5 125 253Zm1-486Z"
-                  />
+    </div>
+    <div class="box">
+      <div class="main__content">
+        <div class="main__content__menu">
+          <div class="main__content__menu--head">
+            <h2>Menu</h2>
+            <div class="main__content__menu--head--side">
+              <h2>Today</h2>
+              <div class="main__content__menu--head--icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                  <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
                 </svg>
               </div>
-              <div class="main__content__updates--content--text>">
-                <p class="main__content__updates--content--text--subject">
-                  Snacks
-                </p>
-                <p class="main__content__updates--content--text--date">
-                  Snacks timing changed for Friday from 5pm to 6pm
-                </p>
-              </div>
-              <button>Clear</button>
-            </div>
-            <div class="main__content__updates--content">
-              <div class="main__content__updates--content--icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="48"
-                  viewBox="0 -960 960 960"
-                  width="48"
-                >
-                  <path
-                    d="M285-80v-368q-52-11-88.5-52.5T160-600v-280h60v280h65v-280h60v280h65v-280h60v280q0 58-36.5 99.5T345-448v368h-60Zm415 0v-320H585v-305q0-79 48-127t127-48v800h-60Z"
-                  />
-                </svg>
-              </div>
-              <div class="main__content__updates--content--text>">
-                <p class="main__content__updates--content--text--subject">
-                  Dinner
-                </p>
-                <p class="main__content__updates--content--text--date">
-                  Dinner Menu changed for today
-                </p>
-              </div>
-              <button>Clear</button>
             </div>
           </div>
-
-          <div class="main__content__rating">
-            <div class="main__content__rating--head">Rating</div>
-            <div class="main__content__rating--content">
-              <div class="main__content__rating--content--icon">
-                <img src="../../icons/account.svg" />
-              </div>
-              <div class="main__content__rating--content--text>">
-                <p class="main__content__rating--content--text--subject">
-                  From CR
-                </p>
-                <p class="main__content__rating--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
-              </div>
-              <button>Clear</button>
+          <div class="main__content__menu--item">
+            <div class="main__content__menu--item--image">
+              <img src="../../images/food1.jpg" />
             </div>
-            <div class="main__content__rating--content">
-              <div class="main__content__rating--content--icon">
-                <img src="../../icons/announcement.svg" />
+            <div class="main__content__menu--item--des">
+              <div>Breakfast</div>
+              <div>
+                <h2>Veg</h2>
+                <p>Veg items to eat in some proper way</p>
               </div>
-              <div class="main__content__rating--content--text>">
-                <p class="main__content__rating--content--text--subject">
-                  Auto Generated
-                </p>
-                <p class="main__content__rating--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
+              <div>
+                <h2>Non-Veg</h2>
+                <p>Veg items to eat in some proper way</p>
               </div>
-              <button>Clear</button>
+              <button>Rate Now</button>
             </div>
           </div>
+          <div class="main__content__menu--item">
+            <div class="main__content__menu--item--image">
+              <img src="../../images/food3.jpg" />
+            </div>
+            <div class="main__content__menu--item--des">
+              <div>Breakfast</div>
+              <div>
+                <h2>Veg</h2>
+                <p>Veg items to eat in some proper way</p>
+              </div>
+              <div>
+                <h2>Non-Veg</h2>
+                <p>Veg items to eat in some proper way</p>
+              </div>
+              <button>Rate Now</button>
+            </div>
+          </div>
+          <div class="main__content__menu--item">
+            <div class="main__content__menu--item--image">
+              <img src="../../images/food 2.jpg" />
+            </div>
+            <div class="main__content__menu--item--des">
+              <div>Breakfast</div>
+              <div>
+                <h2>Veg</h2>
+                <p>Veg items to eat in some proper way</p>
+              </div>
+              <div>
+                <h2>Non-Veg</h2>
+                <p>Veg items to eat in some proper way</p>
+              </div>
+              <button>Rate Now</button>
+            </div>
+          </div>
+        </div>
 
-          <div class="main__content__Complaints">
-            <div class="main__content__Complaints--head">Complaints</div>
-            <div class="main__content__Complaints--content">
-              <div class="main__content__Complaints--content--icon">
-                <img src="../../icons/notification.svg" />
-              </div>
-              <div class="main__content__Complaints--content--text>">
-                <p class="main__content__Complaints--content--text--subject">
-                  From CR
-                </p>
-                <p class="main__content__Complaints--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
-              </div>
-              <button>Clear</button>
+        <div class="main__content__updates">
+          <div class="main__content__updates--head">Updates</div>
+          <div class="main__content__updates--content">
+            <div class="main__content__updates--content--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path
+                  d="M479-40 298-408q-69 12-123.5-30T120-555q0-45 27.5-88t80.5-58q16-99 88.5-159T480-920q91 0 163 60t89 159q53 15 80.5 58t27.5 88q0 75-56.5 117T664-408L479-40ZM266-465q18 0 34-5t25-14l26-27 23 20q25 17 54.5 21.5T483-465q25 0 51-4.5t51-21.5l24-20 25 27q9 9 25.5 14t33.5 5q34 0 60.5-27.5T780-555q0-31-19-54t-54-29l-35-5-2-39q-11-79-61.5-128.5T480-860q-78 0-129 49.5T290-682l-3 39-35 8q-30 8-51 28.5T180-555q0 35 26.5 62.5T266-465Zm213 289 128-252-6-6q-28 15-60.5 22t-57.5 7q-32 0-65-7t-58-22l-6 5 125 253Zm1-486Z" />
+              </svg>
             </div>
-            <div class="main__content__Complaints--content">
-              <div class="main__content__Complaints--content--icon">
-                <img src="../../icons/notification.svg" />
-              </div>
-              <div class="main__content__Complaints--content--text>">
-                <p class="main__content__Complaints--content--text--subject">
-                  Auto Generated
-                </p>
-                <p class="main__content__Complaints--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
-              </div>
-              <button>Clear</button>
+            <div class="main__content__updates--content--text>">
+              <p class="main__content__updates--content--text--subject">
+                Snacks
+              </p>
+              <p class="main__content__updates--content--text--date">
+                Snacks timing changed for Friday from 5pm to 6pm
+              </p>
             </div>
-            <div class="main__content__Complaints--content">
-              <div class="main__content__Complaints--content--icon">
-                <img src="../../icons/notification.svg" />
-              </div>
-              <div class="main__content__Complaints--content--text>">
-                <p class="main__content__Complaints--content--text--subject">
-                  From CR
-                </p>
-                <p class="main__content__Complaints--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
-              </div>
-              <button>Clear</button>
+            <button>Clear</button>
+          </div>
+          <div class="main__content__updates--content">
+            <div class="main__content__updates--content--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path
+                  d="M285-80v-368q-52-11-88.5-52.5T160-600v-280h60v280h65v-280h60v280h65v-280h60v280q0 58-36.5 99.5T345-448v368h-60Zm415 0v-320H585v-305q0-79 48-127t127-48v800h-60Z" />
+              </svg>
             </div>
-            <div class="main__content__Complaints--content">
-              <div class="main__content__Complaints--content--icon">
-                <img src="../../icons/notification.svg" />
-              </div>
-              <div class="main__content__Complaints--content--text>">
-                <p class="main__content__Complaints--content--text--subject">
-                  Auto Generated
-                </p>
-                <p class="main__content__Complaints--content--text--date">
-                  HS Class shifted from 2pm to 5pm
-                </p>
-              </div>
-              <button>Clear</button>
+            <div class="main__content__updates--content--text>">
+              <p class="main__content__updates--content--text--subject">
+                Dinner
+              </p>
+              <p class="main__content__updates--content--text--date">
+                Dinner Menu changed for today
+              </p>
             </div>
+            <button>Clear</button>
+          </div>
+        </div>
 
-            <div class="main__content__Complaints--content--newcomplaint">
-              <div><img src="../../icons/plus sign.svg"</div>
+        <div class="main__content__rating">
+          <div class="main__content__rating--head">Rating</div>
+          <div class="main__content__rating--content">
+            <div class="main__content__rating--content--icon">
+              <img src="../../icons/account.svg" />
+            </div>
+            <div class="main__content__rating--content--text>">
+              <p class="main__content__rating--content--text--subject">
+                From CR
+              </p>
+              <p class="main__content__rating--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+          <div class="main__content__rating--content">
+            <div class="main__content__rating--content--icon">
+              <img src="../../icons/announcement.svg" />
+            </div>
+            <div class="main__content__rating--content--text>">
+              <p class="main__content__rating--content--text--subject">
+                Auto Generated
+              </p>
+              <p class="main__content__rating--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+        </div>
+
+        <div class="main__content__Complaints">
+          <div class="main__content__Complaints--head">Complaints</div>
+          <div class="main__content__Complaints--content">
+            <div class="main__content__Complaints--content--icon">
+              <img src="../../icons/notification.svg" />
+            </div>
+            <div class="main__content__Complaints--content--text>">
+              <p class="main__content__Complaints--content--text--subject">
+                From CR
+              </p>
+              <p class="main__content__Complaints--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+          <div class="main__content__Complaints--content">
+            <div class="main__content__Complaints--content--icon">
+              <img src="../../icons/notification.svg" />
+            </div>
+            <div class="main__content__Complaints--content--text>">
+              <p class="main__content__Complaints--content--text--subject">
+                Auto Generated
+              </p>
+              <p class="main__content__Complaints--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+          <div class="main__content__Complaints--content">
+            <div class="main__content__Complaints--content--icon">
+              <img src="../../icons/notification.svg" />
+            </div>
+            <div class="main__content__Complaints--content--text>">
+              <p class="main__content__Complaints--content--text--subject">
+                From CR
+              </p>
+              <p class="main__content__Complaints--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+          <div class="main__content__Complaints--content">
+            <div class="main__content__Complaints--content--icon">
+              <img src="../../icons/notification.svg" />
+            </div>
+            <div class="main__content__Complaints--content--text>">
+              <p class="main__content__Complaints--content--text--subject">
+                Auto Generated
+              </p>
+              <p class="main__content__Complaints--content--text--date">
+                HS Class shifted from 2pm to 5pm
+              </p>
+            </div>
+            <button>Clear</button>
+          </div>
+
+          <div class="main__content__Complaints--content--newcomplaint">
+            <div><img src="../../icons/plus sign.svg" </div>
               <p>Add New Complaint</p>
             </div>
           </div>
@@ -392,6 +364,7 @@
           </div>
         </div>
       </div>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>

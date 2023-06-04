@@ -80,6 +80,10 @@ $primary-light: #fff2e7;
           background: $background-lighter;
           border-radius: 0.4rem;
           font-size: 1.2rem;
+          & > p {
+            text-align: center;
+            word-wrap: break-word;
+          }
         }
       }
     }
@@ -101,6 +105,7 @@ $primary-light: #fff2e7;
         font-family: "Spartan";
         font-weight: 600;
         // margin-bottom: 3rem;
+        margin: 0;
       }
       &--content {
         display: flex;
@@ -339,4 +344,8 @@ $primary-light: #fff2e7;
       }
     }
   }
+}
+
+.box {
+  height: calc(100% - 8rem);
 }

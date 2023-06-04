@@ -13,6 +13,12 @@ $bar-four: #d4ebd4;
 $primary: #b18256;
 $primary-light: #fff2e7;
 
+$blueOne: #0c0d21;
+$blueTwo: #161738;
+$white: #fff;
+$brownOne: #fff2e7;
+$brownTwo: #b18256;
+$brownThree: #f5f5f5;
 * {
   margin: 0;
   padding: 0;
@@ -43,166 +49,223 @@ html {
   height: calc(100% - 8.8rem);
 }
 .left {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  width: 20%;
+  width: 18%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: $background;
-  &__options {
-    // margin-top: 1.2rem;
+  background-color: $blueOne;
+  &__logo {
+    width: 100%;
+    height: 8rem;
+    // background: #fff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    // padding: 3.2rem;
-    &__listitems {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-self: left;
-      color: $textColor;
-      border-radius: 0 1.2rem 1.2rem 0;
-      margin-bottom: 0.8rem;
-      width: 200%;
-      height: 40%;
-      // gap: 0.8rem;
-      background-color: $primary-light;
-    }
-  }
-
-  &__tabs {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    &__upper {
-      margin-top: 6.2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-self: center;
-      margin-bottom: 90%;
-      // padding: 0 3.2rem;
 
-      &__listitems {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-self: left;
-        color: $textColor;
-        border-radius: 0 1.2rem 1.2rem 0;
-        margin-bottom: 10%;
-        width: 150%;
-        height: 20%;
-        gap: 0.8rem;
-        background-color: $primary-light;
+    align-items: center;
+    &__imgBox {
+      width: 7rem;
+      height: 7rem;
+      margin-left: 1.2rem;
+      &--img {
+        width: 100%;
+        height: 100%;
       }
     }
-  }
-  &__logo {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    &__img {
-      width: 9rem;
-      height: 8rem;
+    &--text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $white;
     }
-    &__text {
-      color: white;
-      font-weight: 600;
-      font-size: 2.4rem;
+  }
+  &__navi {
+    margin-top: 4.8rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    gap: 14rem;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      margin-top: 3.2rem;
+      &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+        background-color: $brownOne;
+        height: 5.4rem;
+        width: 90%;
+        align-items: center;
+        padding-left: 1.2rem;
+        border-radius: 0 0.4rem 0.4rem 0;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.4rem;
+        font-weight: 500;
+        cursor: pointer;
+        &__iconBox {
+          width: 3.2rem;
+          height: 3.2rem;
+          &--icon {
+            width: 100%;
+            height: 100%;
+            color: $brownTwo;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &:hover {
+          background-color: $brownTwo;
+          color: $white;
+
+          &:hover {
+            background-color: $brownTwo;
+            color: $white;
+            .left__navi__top__item__iconBox--icon {
+              fill: $white;
+            }
+          }
+        }
+      }
     }
   }
 }
+
 .main {
-  width: 80%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $background-light;
+  gap: 1.2rem;
+  width: calc(100% - 18%);
+  height: 100vh;
+  background-color: $blueTwo;
   &__nav {
-    // z-index: 1;
     width: 100%;
-    height: 8.8rem;
-    background-color: $background;
+    height: 8rem;
+    background-color: $blueOne;
     display: flex;
-    flex: 1 0;
     flex-direction: row;
     justify-content: space-between;
-
+    padding: 0 1.2rem;
     &__pageName {
       display: flex;
-      padding: 0 2rem;
       flex-direction: row;
-      justify-content: center;
       align-items: center;
       gap: 1.2rem;
-      width: fit-content;
-      height: 100%;
+      font-size: 1.6rem;
       &--text {
-        font-size: 2.7rem;
         color: white;
-        font-family: "Inter";
-        font-style: normal;
+        font-size: 2rem;
         font-weight: 600;
       }
-      &--iconBox > svg {
-        fill: white;
+      &__iconBox {
+        width: 2.4rem;
+        height: 2.4rem;
+        &--icon {
+          width: 100%;
+          height: 100%;
+          fill: $white;
+        }
       }
     }
-
     &__right {
+      height: 100%;
+      width: 50%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
-      gap: 1rem;
-      padding: 0 3.2rem;
-      &--search {
-        border-radius: 0.5rem;
-        height: 4rem;
-        text-align: center;
-      }
-      &--bell {
-        background-color: $primary;
-        height: 4rem;
-        width: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.8rem;
-        & > svg {
-          fill: white;
-        }
-      }
-      &--account {
-        padding: 0 1rem;
-        height: 45%;
+      justify-content: space-between;
+      &__search {
         display: flex;
         flex-direction: row;
+        gap: 1.2rem;
+        background-color: white;
+        width: 24rem;
+        height: 4.8rem;
         align-items: center;
-        gap: 1rem;
-        color: $textColor;
-        background-color: $primary-light;
-        border-radius: 0.3rem;
-        &--icon {
-          border-radius: 50%;
-          height: 4rem;
-          width: 4rem;
-          background-color: white;
+        border-radius: 0.4rem;
+        padding: 0.2rem 0.6rem;
+        &__iconBox {
+          width: 3.2rem;
+          height: 3.2rem;
+          &:hover {
+            cursor: text;
+          }
+          &--icon {
+            width: 100%;
+            height: 100%;
+            fill: $blueTwo;
+          }
         }
-        &--name {
-          font-weight: 700;
+        &__box {
+          border: none;
+          font-size: 1.6rem;
+          &:focus-within {
+            outline: none;
+          }
+          &:focus-visible {
+            outline: none;
+          }
         }
-        &--mail {
-          font-weight: 300;
+      }
+      &__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: $white;
+        fill: white;
+        align-items: center;
+        gap: 1.6rem;
+        &__bellBox {
+          width: 4.8rem;
+          height: 4.8rem;
+          background-color: $brownTwo;
+          border-radius: 0.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            cursor: pointer;
+          }
+          &--bell {
+            width: 80%;
+            height: 80%;
+            fill: $white;
+          }
+        }
+        &__account {
+          display: flex;
+          flex-direction: row;
+          gap: 1.2rem;
+          height: 4.8rem;
+          width: 20rem;
+          background-color: $white;
+          align-items: center;
+          border-radius: 0.4rem;
+          background-color: $brownOne;
+          &__imgBox {
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-left: 0.4rem;
+            &--img {
+              width: 80%;
+              height: 80%;
+            }
+          }
+          &__details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $blueOne;
+            &--name {
+              font-size: 1.2rem;
+              font-weight: 600;
+            }
+          }
         }
       }
     }
