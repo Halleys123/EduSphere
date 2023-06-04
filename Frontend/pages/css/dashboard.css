@@ -67,6 +67,10 @@
   border-radius: 0.4rem;
   font-size: 1.2rem;
 }
+.main__content__timetable--table--bodyitem > p {
+  text-align: center;
+  word-wrap: break-word;
+}
 .main__content__assignments {
   background-color: #f1fcff;
   grid-column: 3/4;
@@ -83,6 +87,7 @@
   padding: 1rem 0 3rem 0;
   font-family: "Spartan";
   font-weight: 600;
+  margin: 0;
 }
 .main__content__assignments--content {
   display: flex;
@@ -298,4 +303,8 @@
   font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
+}
+
+.box {
+  height: calc(100% - 8rem);
 }/*# sourceMappingURL=dashboard.css.map */
