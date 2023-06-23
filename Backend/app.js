@@ -1,8 +1,10 @@
 const cors = require("cors");
 const express = require("express");
+const cookieParser = require("cookie-parser");
 const app = express();
-
+app.use(express.json());
+app.use(cookieParser());
 app.use(cors());
-// app.use(express.static("public"));
-
+const loginSignUpRouter = require("./routes/loginSignRouter");
+app.use("/api/v1", loginSignUpRouter);
 module.exports = app;

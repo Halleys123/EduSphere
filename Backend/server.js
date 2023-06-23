@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 dotenv.config({ path: "./config.env" });
 
-const ip = process.env.IP || "192.168.137.152";
+const ip = process.env.IP || "127.0.0.1";
 const port = process.env.PORT || 3000;
 
 const DB = process.env.DATABASE_STRING.replace(

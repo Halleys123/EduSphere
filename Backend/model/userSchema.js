@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
-
+const bcrypt = require("bcrypt");
+const validateEmail = (v) => {
+  if (v.endsWith("@nith.ac.in")) return true;
+  else return false;
+};
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -10,6 +14,8 @@ const userSchema = new mongoose.Schema({
   },
   email: {
     type: String,
+    validate: [validateEmail, "enter the email of nit hamirpur"],
+
     required: [true, "Please provide your email!"],
     unique: true,
     trim: true,
@@ -37,7 +43,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a password!"],
     minlength: [4, "A password must have more or equal then 8 characters"],
-    select: false,
   },
   mess: {
     type: [
@@ -105,5 +110,22 @@ const userSchema = new mongoose.Schema({
     ],
   },
 });
+userSchema.pre("save", async function () {
+  const salt = await bcrypt.genSalt();
+  this.password = await bcrypt.hash(this.password, salt);
+  console.log(this);
+});
+userSchema.statics.loginCheck = async function (email, password) {
+  const user = await this.findOne({ email });
+  console.log(user);
+  if (user) {
+    const auth = await bcrypt.compare(password, user.password);
 
+    if (auth) {
+      return user;
+    }
+    throw Error("Wrong Password");
+  }
+  throw Error("Wrong email");
+};
 module.exports = userSchema;
