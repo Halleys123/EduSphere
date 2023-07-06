@@ -124,13 +124,15 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 1.2rem;
+  position: relative;
 }
 .main__nav__pageName {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1.2rem;
-  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.main__nav__pageName:hover {
+  cursor: pointer;
 }
 .main__nav__pageName--text {
   color: white;
@@ -248,3 +250,29 @@ html {
   font-size: 1.2rem;
   font-weight: 600;
 } /*# sourceMappingURL=general.css.map */
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.hide {
+  animation: hide 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.main__nav__pageName {
+  position: relative;
+}
