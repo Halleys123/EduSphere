@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main__assignments {
+  display: flex;
+  background-color: #d6d4eb;
+  height: 100rem;
+  font-size: 10rem;
+}
+
+.box {
+  display: flex;
+}/*# sourceMappingURL=assignment.css.map */
