@@ -1,3 +1,7 @@
+// Todo - Change Array to object for storing files of a particular assignment
+// so as to save name and link separately
+// Todo - Add funcitonality to submit button
+
 const box = document.querySelector(".right");
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -84,11 +88,15 @@ function assignmentListGenerator(subjectAssignmentList) {
         <div class="right__subject__data__dates">
             <div class="right__subject__data__dates__item">
                 <p class="right__subject__data__dates__item--head">Start Date</p>
-                <p class="right__subject__data__dates__item--date">${startDate.toISOString()}</p>
+                <p class="right__subject__data__dates__item--date">${startDate.getDate()}  ${MonthNumberToName(
+      startDate.getMonth()
+    )}  ${startDate.getFullYear()}</p>
             </div>
             <div class="right__subject__data__dates__item">
                 <p class="right__subject__data__dates__item--head">End Date</p>
-                <p class="right__subject__data__dates__item--date">${endDate.toISOString()}</p>
+                <p class="right__subject__data__dates__item--date"> ${endDate.getDate()}  ${MonthNumberToName(
+      endDate.getMonth()
+    )}  ${endDate.getFullYear()}</p>
             </div>
         </div>
     </div>
@@ -101,6 +109,37 @@ function assignmentListGenerator(subjectAssignmentList) {
   return html;
 }
 
+function MonthNumberToName(monthNumber) {
+  switch (monthNumber) {
+    case 0:
+      return "Jan";
+    case 1:
+      return "Feb";
+    case 2:
+      return "Mar";
+    case 3:
+      return "Apr";
+    case 4:
+      return "May";
+    case 5:
+      return "June";
+    case 6:
+      return "July";
+    case 7:
+      return "Aug";
+    case 8:
+      return "Sept";
+    case 9:
+      return "Oct";
+    case 10:
+      return "Nov";
+    case 11:
+      return "Dec";
+
+    default:
+      return "Invalid Month";
+  }
+}
 function teacherFilesGenerator(teacherFiles) {
   let totalTeacherFiles = teacherFiles.length;
   let html = ``;

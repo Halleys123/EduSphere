@@ -7,7 +7,7 @@
 .right__subject {
   width: 100%;
   min-height: 10rem;
-  height: calc(100vh - 20rem);
+  height: calc(100vh - 13rem);
   overflow: hidden;
   border-radius: 0.4rem;
   background-color: #f1fcff;
@@ -191,4 +191,4 @@
 }
 .scrollBox::-webkit-scrollbar-thumb:hover {
   background: #b18256;
-}/*# sourceMappingURL=classes.css.map */
+} /*# sourceMappingURL=classes.css.map */
