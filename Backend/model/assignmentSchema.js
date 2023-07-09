@@ -56,6 +56,46 @@ const subjectSchema = new mongoose.Schema({
   },
 });
 
+const announcements = new mongoose.Schema({
+  announcer: {
+    type: String,
+    required: [true, "Please provide the announcer!"],
+    trim: true,
+  },
+  validTill: {
+    type: Date,
+    required: [true, "Please provide the valid till date!"],
+  },
+  message: {
+    type: String,
+    required: [true, "Please provide the message!"],
+    trim: true,
+  },
+  dateTime: {
+    type: { date: Date, present: Boolean },
+    default: { date: Date.now, present: true },
+  },
+});
+const periodData = new mongoose.Schema({
+  subject: {
+    type: String,
+    required: [true, "Please provide the subject!"],
+    trim: true,
+  },
+  teacher: {
+    type: String,
+    required: [true, "Please provide the teacher!"],
+    trim: true,
+  },
+});
+const sectionData = new mongoose.Schema({
+  section: {
+    type: String,
+    required: [true, "Please provide the section!"],
+    trim: true,
+  },
+  timeTable: [{ day: String, periods: [periodData] }],
+});
 const sectionSchema = new mongoose.Schema({
   section: {
     type: String,
@@ -64,6 +104,12 @@ const sectionSchema = new mongoose.Schema({
   },
   subjects: {
     type: [subjectSchema],
+  },
+  announcements: {
+    type: [announcements],
+  },
+  timeTable: {
+    type: [sectionData],
   },
 });
 

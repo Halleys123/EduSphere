@@ -171,6 +171,13 @@
   gap: 1rem;
   height: 100%;
 }
+.main__content__events__items {
+  display: flex;
+  max-height: 21rem;
+  overflow: scroll;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 .main__content__events--head {
   font-family: "Inter";
   font-size: 2rem;
@@ -190,11 +197,10 @@
 .main__content__events--content button {
   background-color: #b18256;
   color: white;
-  border-color: #b18256;
-  padding: 0.5rem 1rem;
+  border: none;
+  padding: 0.8rem 1.8rem;
   border-radius: 0.2rem;
-  text-align: center;
-  margin-left: 5rem;
+  transition: all 0.3s;
 }
 .main__content__events--content--text--subject {
   font-size: 1.6rem;
