@@ -1,0 +1,210 @@
+{
+  "_id": {
+    "$oid": "647cccc1f1d1491f983c1ab3"
+  },
+  "section": "2022C",
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "subjectCode": "MA-121",
+      "assignments": [
+        {
+          "title": "Problem Set 1",
+          "dueDate": "2023-06-10T00:00:00Z",
+          "isCompleted": false,
+          "isStudyMaterial": false,
+          "dateGiven": "2023-06-05T09:00:00Z",
+          "dateCompleted": null,
+          "description": "Solve the problems from chapter 1.",
+          "files": {
+            "teachers": ["QuestionsPDFLink", "OtherfileLink"],
+            "students": ["SubmittedByStudent"]
+          }
+        },
+        {
+          "title": "Problem Set 2",
+          "dueDate": "2023-06-10T00:00:00Z",
+          "isCompleted": false,
+          "isStudyMaterial": false,
+          "dateGiven": "2023-06-05T09:00:00Z",
+          "dateCompleted": null,
+          "description": "Solve the problems from chapter 1.",
+          "files": {
+            "teachers": ["QuestionsPDFLink", "OtherfileLink"],
+            "students": ["SubmittedByStudent"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "subjectCode": "CS-101",
+      "assignments": [
+        {
+          "title": "Problem Set 1",
+          "dueDate": "2023-06-10T00:00:00Z",
+          "isCompleted": false,
+          "isStudyMaterial": false,
+          "dateGiven": "2023-06-05T09:00:00Z",
+          "dateCompleted": null,
+          "description": "Solve the problems from chapter 1.",
+          "files": {
+            "teachers": ["QuestionsPDFLink", "OtherfileLink"],
+            "students": ["SubmittedByStudent"]
+          }
+        },
+        {
+          "title": "Problem Set 2",
+          "dueDate": "2023-06-10T00:00:00Z",
+          "isCompleted": false,
+          "isStudyMaterial": false,
+          "dateGiven": "2023-06-05T09:00:00Z",
+          "dateCompleted": null,
+          "description": "Solve the problems from chapter 1.",
+          "files": {
+            "teachers": ["QuestionsPDFLink", "OtherfileLink"],
+            "students": ["SubmittedByStudent"]
+          }
+        }
+      ]
+    }
+  ],
+  "announcements": [
+    {
+      "announcer": "CR",
+      "message": "Mathematics Exams sheets will be shown on 22 Jan 2022",
+      "validTill": "2024-01-01T18:00:00Z",
+      "dateTime": {
+        "present": true,
+        "date": "2023-07-18T00:00:00Z"
+      }
+    }
+  ],
+  "timetable": [
+    {
+      "section": "C1",
+      "timetable": [
+        {
+          "day": "Monday",
+          "periods": [
+            { "period": "", "teacher": "", "room": "" },
+            {
+              "period": "EC-211",
+              "teacher": "Er Vinod Kumar Sharma",
+              "room": "E1"
+            },
+            { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+            { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+            { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+            { "period": "", "teacher": "", "room": "" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "periods": [
+            { "period": "", "teacher": "", "room": "" },
+            {
+              "period": "EC-211",
+              "teacher": "Er Vinod Kumar Sharma",
+              "room": "E1"
+            },
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+            { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+            {
+              "period": "CS-214",
+              "teacher": "Guest Faculity",
+              "room": "Research Lab"
+            },
+            {
+              "period": "CS-214",
+              "teacher": "Guest Faculity",
+              "room": "Research Lab"
+            },
+
+            { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "periods": [
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "", "teacher": "", "room": "" },
+            {
+              "period": "EC-211",
+              "teacher": "Er Vinod Kumar Sharma",
+              "room": "E1"
+            },
+            { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+            {
+              "period": "CS-215",
+              "teacher": "Guest Faculity",
+              "room": "Research Lab"
+            },
+            {
+              "period": "CS-215",
+              "teacher": "Guest Faculity",
+              "room": "Research Lab"
+            },
+            {
+              "period": "CS-211",
+              "teacher": "Vinod Kumar Sharma",
+              "room": "E1"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "periods": [
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+            { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+            {
+              "period": "EC-214",
+              "teacher": "Guest Faculity",
+              "room": "E1"
+            },
+            {
+              "period": "EC-214",
+              "teacher": "Guest Faculity",
+              "room": "E1"
+            },
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "periods": [
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+            { "period": "", "teacher": "", "room": "" },
+            { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+            { "period": "CS-212", "teacher": "Guest Faculity", "room": "G1" },
+            {
+              "period": "EC-215",
+              "teacher": "Guest Faculity",
+              "room": "E1"
+            },
+            {
+              "period": "EC-215",
+              "teacher": "Guest Faculity",
+              "room": "E1"
+            },
+            { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+            { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" }
+          ]
+        }
+      ]
+    }
+  ]
+}

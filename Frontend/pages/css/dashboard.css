@@ -335,3 +335,9 @@
 }
 
 /*# sourceMappingURL=dashboard.css.map */
+.hidden {
+  display: none;
+}
+.main__content__timetable--head--side--item {
+  cursor: pointer;
+}
