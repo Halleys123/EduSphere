@@ -77,24 +77,25 @@ const announcements = new mongoose.Schema({
   },
 });
 const periodData = new mongoose.Schema({
-  subject: {
-    type: String,
-    required: [true, "Please provide the subject!"],
-    trim: true,
+  period: {
+    type: {
+      subject: String,
+      teacher: String,
+    },
   },
-  teacher: {
-    type: String,
-    required: [true, "Please provide the teacher!"],
-    trim: true,
+});
+const dayData = new mongoose.Schema({
+  day: {
+    type: {
+      day: String,
+      periods: [periodData],
+    },
   },
 });
 const sectionData = new mongoose.Schema({
   section: {
-    type: String,
-    required: [true, "Please provide the section!"],
-    trim: true,
+    type: { section: String, timetable: [dayData] },
   },
-  timeTable: [{ day: String, periods: [periodData] }],
 });
 const sectionSchema = new mongoose.Schema({
   section: {

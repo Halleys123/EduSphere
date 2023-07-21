@@ -1,0 +1,100 @@
+{
+  "section": "C1",
+  "timetable": [
+    {
+      "day": "Monday",
+      "periods": [
+        { "period": "", "teacher": "", "room": "" },
+        {
+          "period": "EC-211",
+          "teacher": "Er Vinod Kumar Sharma",
+          "room": "E1"
+        },
+        { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+        { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+        { "period": "", "teacher": "", "room": "" }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "periods": [
+        { "period": "", "teacher": "", "room": "" },
+        {
+          "period": "EC-211",
+          "teacher": "Er Vinod Kumar Sharma",
+          "room": "E1"
+        },
+        { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+        { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+        { "period": "", "teacher": "", "room": "" }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "periods": [
+        { "period": "", "teacher": "", "room": "" },
+        {
+          "period": "EC-211",
+          "teacher": "Er Vinod Kumar Sharma",
+          "room": "E1"
+        },
+        { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+        { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+        { "period": "", "teacher": "", "room": "" }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "periods": [
+        { "period": "", "teacher": "", "room": "" },
+        {
+          "period": "EC-211",
+          "teacher": "Er Vinod Kumar Sharma",
+          "room": "E1"
+        },
+        { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+        { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+        { "period": "", "teacher": "", "room": "" }
+      ]
+    },
+    {
+      "day": "Friday",
+      "periods": [
+        { "period": "", "teacher": "", "room": "" },
+        {
+          "period": "EC-211",
+          "teacher": "Er Vinod Kumar Sharma",
+          "room": "E1"
+        },
+        { "period": "CS-212", "teacher": "Guest Faculity", "room": "E2" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "E1" },
+        { "period": "", "teacher": "", "room": "" },
+        { "period": "CS-211", "teacher": "Guest Faculity", "room": "G1" },
+        { "period": "CS-213", "teacher": "Dr Rajeev Kumar", "room": "G1" },
+        { "period": "MA-203", "teacher": "Guest Faculity", "room": "G2" },
+        { "period": "", "teacher": "", "room": "" }
+      ]
+    }
+  ]
+}

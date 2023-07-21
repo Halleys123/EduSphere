@@ -349,3 +349,8 @@ $primary-light: #fff2e7;
 .box {
   height: calc(100% - 8rem);
 }
+
+.hidden {
+  cursor: pointer;
+  display: none;
+}
