@@ -5,10 +5,8 @@ const item = new mongoose.Schema({
   menu: [String],
 });
 const menuDay = new mongoose.Schema({
-  day: {
-    day: String,
-    menu: [item],
-  },
+  day: String,
+  menu: [item],
 });
 const snackDay = new mongoose.Schema({
   day: String,
@@ -38,7 +36,9 @@ const messSchema = new mongoose.Schema({
   },
   mess: {
     timings: {
-      type: String,
+      breakfast: String,
+      lunch: String,
+      dinner: String,
     },
     menu: [menuDay],
     snacks: [snackDay],
