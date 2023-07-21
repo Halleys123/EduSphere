@@ -1,0 +1,244 @@
+{
+  "_id": {
+    "$oid": "64ba7629db0e8a21f1b384b7"
+  },
+  "hostel": "KBH",
+  "mess": {
+    "timings": {
+      "breakfast": "8:00 AM - 9:00 AM",
+      "lunch": "12:00 PM - 2:00 PM",
+      "dinner": "8:00 PM - 9:00 PM"
+    },
+    "menu": [
+      {
+        "day": "monday",
+        "menu": [
+          {
+            "time": "8:00 AM - 9:00 AM",
+            "type": "breakfast",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "12:00 PM - 2:00 PM",
+            "type": "Lunch",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "8:00 PM - 9:00 PM",
+            "type": "Dinner",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "menu": [
+          {
+            "time": "8:00 AM - 9:00 AM",
+            "type": "breakfast",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "12:00 PM - 2:00 PM",
+            "type": "Lunch",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "8:00 PM - 9:00 PM",
+            "type": "Dinner",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "menu": [
+          {
+            "time": "8:00 AM - 9:00 AM",
+            "type": "breakfast",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "12:00 PM - 2:00 PM",
+            "type": "Lunch",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "8:00 PM - 9:00 PM",
+            "type": "Dinner",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "menu": [
+          {
+            "time": "8:00 AM - 9:00 AM",
+            "type": "breakfast",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "12:00 PM - 2:00 PM",
+            "type": "Lunch",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "8:00 PM - 9:00 PM",
+            "type": "Dinner",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "menu": [
+          {
+            "time": "8:00 AM - 9:00 AM",
+            "type": "breakfast",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "12:00 PM - 2:00 PM",
+            "type": "Lunch",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          },
+          {
+            "time": "8:00 PM - 9:00 PM",
+            "type": "Dinner",
+            "menu": ["chapati", "dal", "hoka na mono", "食べ物"]
+          }
+        ]
+      }
+    ],
+    "snacks": [
+      {
+        "day": "Monday",
+        "item": ["植物A", "植物B"]
+      },
+      {
+        "day": "Tuesday",
+        "item": ["植物A", "植物B"]
+      },
+      {
+        "day": "Wednesday",
+        "item": ["植物A", "植物B"]
+      },
+      {
+        "day": "Thursday",
+        "item": ["植物A", "植物B"]
+      },
+      {
+        "day": "Friday",
+        "item": ["植物A", "植物B"]
+      }
+    ],
+    "rating": [
+      {
+        "date": "2023-10-21",
+        "rating": {
+          "breakfast": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "lunch": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "dinner": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          }
+        }
+      },
+      {
+        "date": "2023-10-22",
+        "rating": {
+          "breakfast": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "lunch": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "dinner": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          }
+        }
+      },
+      {
+        "date": "2023-10-23",
+        "rating": {
+          "breakfast": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "lunch": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          },
+          "dinner": {
+            "overall": "4.3",
+            "starsCount": {
+              "1": 2030,
+              "2": 2030,
+              "3": 2030,
+              "4": 2030,
+              "5": 2030
+            }
+          }
+        }
+      }
+    ]
+  }
+}
