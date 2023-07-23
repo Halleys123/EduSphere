@@ -307,4 +307,9 @@
 
 .box {
   height: calc(100% - 8rem);
+}
+
+.hidden {
+  cursor: pointer;
+  display: none;
 }/*# sourceMappingURL=dashboard.css.map */
