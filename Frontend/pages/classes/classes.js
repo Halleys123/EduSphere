@@ -5,10 +5,11 @@
 const box = document.querySelector(".right");
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("http://127.0.0.1:3000/api/v1/assignments")
+  fetch("http://127.0.0.1:3000/api/v1/assignments/2022C")
     .then((res) => res.json())
     .then((data) => {
       box.innerHTML = "";
+      console.log(data.data.subjects);
       data.data.subjects.forEach((subject) => {
         box.insertAdjacentHTML("beforeend", subjectBoxGenerator(subject));
       });
