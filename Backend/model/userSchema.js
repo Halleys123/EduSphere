@@ -13,13 +13,27 @@ const attendanceItem = new mongoose.Schema({
   reason: [String],
 });
 const subjectItem = new mongoose.Schema({
-  subject: {
-    subjectName: {
-      type: String,
-      required: true,
-    },
-    attendance: [attendanceItem],
+  subjectName: {
+    type: String,
+    required: true,
   },
+  totalClasses: {
+    type: Number,
+    default: 0,
+  },
+  present: {
+    type: Number,
+    default: 0,
+  },
+  absent: {
+    type: Number,
+    default: 0,
+  },
+  unknown: {
+    type: Number,
+    default: 0,
+  },
+  attendance: [attendanceItem],
 });
 const userSchema = new mongoose.Schema({
   name: {
@@ -74,7 +88,12 @@ const userSchema = new mongoose.Schema({
             max: 5,
           },
           comments: {
-            type: [String],
+            type: [
+              {
+                text: String,
+                time: Date,
+              },
+            ],
             default: [],
           },
         },
@@ -113,6 +132,7 @@ const userSchema = new mongoose.Schema({
         complaint: {
           type: String,
         },
+        type: String,
         status: {
           type: String,
           enum: ["pending", "resolved"],
