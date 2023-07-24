@@ -90,8 +90,17 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   padding: 0 2rem;
   gap: 1rem;
+  max-height: 40rem;
+}
+.main__content__assignments__items {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-height: 30rem;
 }
 .main__content__assignments--head {
   font-family: inherit;
@@ -107,8 +116,9 @@
   align-items: center;
   background-color: #d6d4eb;
   width: 100%;
-  height: 15%;
+  min-height: 5.2rem;
   border-radius: 0.4rem;
+  padding: 0rem 1rem;
 }
 .main__content__assignments--content--text--subject {
   font-size: 1.5rem;
@@ -174,13 +184,21 @@
 }
 .main__content__Complaints {
   background-color: #f1fcff;
-  grid-column: 1/2;
-  grid-row: 3/4;
+  /* grid-column: 2/3;
+  grid-row: 1/2; */
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
   gap: 1rem;
+  height: 100%;
+}
+.main__content__Complaints__items {
+  display: flex;
+  max-height: 21rem;
+  overflow: scroll;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 .main__content__Complaints--head {
   font-family: "Inter";
@@ -190,29 +208,43 @@
 }
 .main__content__Complaints--content {
   display: flex;
-  gap: 5%;
   align-items: center;
+  justify-content: space-between;
   background-color: #d6d4eb;
   width: 100%;
-  height: 12%;
+  min-height: 7.2rem;
   border-radius: 0.4rem;
+  padding: 0rem 1rem;
+}
+.util {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
 }
 .main__content__Complaints--content button {
   background-color: #b18256;
   color: white;
-  border-color: #b18256;
-  padding: 0.5rem 1rem;
+  border: none;
+  padding: 0.8rem 1.8rem;
   border-radius: 0.2rem;
-  height: 40%;
-  text-align: center;
-  margin-left: 5rem;
+  transition: all 0.3s;
 }
+.main__content__Complaints--content button:hover {
+  cursor: pointer;
+  background-color: #b18f70;
+}
+.main__content__Complaints--content button:active {
+  transform: scale(0.96);
+  background-color: #b37c49;
+}
+
 .main__content__Complaints--content--text--subject {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 .main__content__Complaints--content--text--date {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .main__content__Complaints--content--newcomplaint {
   display: flex;
@@ -220,7 +252,14 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #0f193d;
+  border-radius: 0.5rem;
   color: #1e1f4b;
+  transition: all 0.3s;
+  margin-bottom: 0.4rem;
+}
+.main__content__Complaints--content--newcomplaint:hover {
+  cursor: pointer;
+  background-color: rgb(255, 240, 240);
 }
 .main__content__attendance {
   background-color: #f1fcff;

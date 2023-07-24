@@ -4,6 +4,28 @@ const validateEmail = (v) => {
   if (v.endsWith("@nith.ac.in")) return true;
   else return false;
 };
+const attendanceItem = new mongoose.Schema({
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  classes: {
+    type: Number,
+    default: 0,
+  },
+  time: [Date],
+  status: [String],
+  reason: [String],
+});
+const subjectItem = new mongoose.Schema({
+  subject: {
+    subjectName: {
+      type: String,
+      required: true,
+    },
+    attendance: [attendanceItem],
+  },
+});
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -100,6 +122,7 @@ const userSchema = new mongoose.Schema({
       },
     ],
   },
+  attendance: [subjectItem],
 });
 userSchema.statics.loginCheck = async function (email, password) {
   const user = await this.findOne({ email });
