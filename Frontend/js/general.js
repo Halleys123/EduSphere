@@ -9,3 +9,17 @@ document.querySelectorAll(".changePageMenu").forEach((item) => {
     window.location.href = e.currentTarget.getAttribute("href");
   });
 });
+document.querySelectorAll(".clearButton").forEach((item) => {
+  item.addEventListener("click", () => {
+    if (
+      !item.parentElement.parentElement.classList.contains(
+        "main__content__notices--noticeupdates"
+      )
+    )
+      item.parentElement.remove();
+    else {
+      item.parentElement.parentElement.remove();
+    }
+    // console.log(item);
+  });
+});

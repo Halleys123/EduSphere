@@ -63,6 +63,20 @@ window.addEventListener("DOMContentLoaded", () => {
       );
       pushTimeTable(timetableArrayGenerate(data.data.timetable));
       messageBox.insertAdjacentHTML("beforeend", data1);
+      document.querySelectorAll(".clearButton").forEach((item) => {
+        item.addEventListener("click", () => {
+          item.parentElement.remove();
+          // console.log(item);
+        });
+      });
+      document
+        .querySelectorAll(".main__content__assignments--content")
+        .forEach((item) => {
+          item.addEventListener("click", () => {
+            window.location.href =
+              "http://127.0.0.1:5502/Frontend/pages/classes/index.html";
+          });
+        });
     });
 });
 
@@ -114,7 +128,7 @@ function announcementGenerate(data) {
        ${announcement.message}
      </p>
    </div>
-   <button>Clear</button>
+   <button class="clearButton">Clear</button>
  </div>`;
   });
   return html;
