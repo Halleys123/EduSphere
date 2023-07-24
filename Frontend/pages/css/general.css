@@ -276,3 +276,6 @@ html {
 .main__nav__pageName {
   position: relative;
 }
+.goAway {
+  display: none;
+}

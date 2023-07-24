@@ -380,3 +380,7 @@
 .main__content__timetable--head--side--item {
   cursor: pointer;
 }
+.main__content__assignments--content:hover {
+  background-color: #d4d5eb;
+  cursor: pointer;
+}
