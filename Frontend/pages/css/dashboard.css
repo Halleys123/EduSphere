@@ -90,8 +90,17 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   padding: 0 2rem;
   gap: 1rem;
+  max-height: 40rem;
+}
+.main__content__assignments__items {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-height: 30rem;
 }
 .main__content__assignments--head {
   font-family: inherit;
@@ -107,8 +116,9 @@
   align-items: center;
   background-color: #d6d4eb;
   width: 100%;
-  height: 15%;
+  min-height: 5.2rem;
   border-radius: 0.4rem;
+  padding: 0rem 1rem;
 }
 .main__content__assignments--content--text--subject {
   font-size: 1.5rem;
