@@ -1,5 +1,26 @@
 const mongoose = require("mongoose");
-
+const attendanceItem = new mongoose.Schema({
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  classes: {
+    type: Number,
+    default: 0,
+  },
+  time: [Date],
+  status: [String],
+  reason: [String],
+});
+const subjectItem = new mongoose.Schema({
+  subject: {
+    subjectName: {
+      type: String,
+      required: true,
+    },
+    attendance: [attendanceItem],
+  },
+});
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -104,6 +125,7 @@ const userSchema = new mongoose.Schema({
       },
     ],
   },
+  attendance: [subjectItem],
 });
 
 module.exports = userSchema;

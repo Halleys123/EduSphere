@@ -51,13 +51,13 @@
   transform: scale(1.02);
 }
 .main__content__box__details__textItems__item--red {
-  background-color: #ebd8d4;
+  background-color: rgba(254, 176, 25, 0.6);
 }
 .main__content__box__details__textItems__item--green {
-  background-color: #d4ebd4;
+  background-color: rgba(0, 227, 150, 0.6);
 }
 .main__content__box__details__textItems__item--yellow {
-  background-color: #ffecba;
+  background-color: rgba(0, 143, 251, 0.6);
 }
 .main__content__box__details__textItems__item--skin {
   background-color: #fff2e7;
