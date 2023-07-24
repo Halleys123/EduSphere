@@ -1,0 +1,144 @@
+{
+  "name": "Test User",
+  "email": "test@nith.ac.in",
+  "photo": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
+  "phone": "1234567890",
+  "password": "test",
+  "mess": [
+    {
+      "date": "2018-01-01",
+      "breakfast": {
+        "rating": 5,
+        "comments": [
+          {
+            "text": "Good food",
+            "time": "2018-01-05T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          },
+          {
+            "text": "Good food",
+            "time": "2018-01-01T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          }
+        ]
+      },
+      "lunch": {
+        "rating": 5,
+        "comments": [
+          {
+            "text": "Good food",
+            "time": "2018-01-01T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          },
+          {
+            "text": "Good food",
+            "time": "2018-01-01T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          }
+        ]
+      },
+      "dinner": {
+        "rating": 5,
+        "comments": [
+          {
+            "text": "Good food",
+            "time": "2018-01-01T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          },
+          {
+            "text": "Good food",
+            "time": "2018-01-01T12:00:00Z",
+            "foodtime": "2018-01-01T12:00:00Z"
+          }
+        ]
+      }
+    }
+  ],
+  "complaints": [
+    {
+      "date": "2018-01-01",
+      "type": "breakfast",
+      "complaint": "Food is not good",
+      "status": "pending",
+      "isSeen": false
+    },
+    {
+      "date": "2018-01-01",
+      "type": "lunch",
+      "complaint": "Food is not good",
+      "status": "pending",
+      "isSeen": false
+    }
+  ],
+  "attendance": [
+    {
+      "subjectName": "Engineering Chemistry",
+      "totalClasses": 30,
+      "present": 20,
+      "unknown": 5,
+      "absent": 5,
+      "attendance": [
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        }
+      ]
+    },
+    {
+      "subjectName": "Engineering Mathematics",
+      "totalClasses": 30,
+      "present": 20,
+      "unknown": 5,
+      "absent": 5,
+      "attendance": [
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        }
+      ]
+    },
+    {
+      "subjectName": "Engineering Computer",
+      "totalClasses": 30,
+      "present": 20,
+      "unknown": 5,
+      "absent": 5,
+      "attendance": [
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-01",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        }
+      ]
+    }
+  ]
+}
