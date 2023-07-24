@@ -25,24 +25,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "default.jpg",
   },
-  phone: {
-    type: String,
-    required: [true, "Please provide your phone number!"],
-    unique: true,
-    trim: true,
-    minlength: [
-      10,
-      "A phone number must have more or equal then 10 characters",
-    ],
-    maxlength: [
-      10,
-      "A phone number must have less or equal then 10 characters",
-    ],
-  },
+
   password: {
     type: String,
     required: [true, "Please provide a password!"],
     minlength: [4, "A password must have more or equal then 8 characters"],
+  },
+  logInCounter: {
+    type: Number,
+    default: 0,
   },
   mess: {
     type: [
@@ -109,11 +100,6 @@ const userSchema = new mongoose.Schema({
       },
     ],
   },
-});
-userSchema.pre("save", async function () {
-  const salt = await bcrypt.genSalt();
-  this.password = await bcrypt.hash(this.password, salt);
-  console.log(this);
 });
 userSchema.statics.loginCheck = async function (email, password) {
   const user = await this.findOne({ email });
