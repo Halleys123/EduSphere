@@ -1,4 +1,9 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const validateEmail = (v) => {
+  if (v.endsWith("@nith.ac.in")) return true;
+  else return false;
+};
 const attendanceItem = new mongoose.Schema({
   date: {
     type: Date,
@@ -45,6 +50,8 @@ const userSchema = new mongoose.Schema({
   },
   email: {
     type: String,
+    validate: [validateEmail, "enter the email of nit hamirpur"],
+
     required: [true, "Please provide your email!"],
     unique: true,
     trim: true,
@@ -54,25 +61,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "default.jpg",
   },
-  phone: {
-    type: String,
-    required: [true, "Please provide your phone number!"],
-    unique: true,
-    trim: true,
-    minlength: [
-      10,
-      "A phone number must have more or equal then 10 characters",
-    ],
-    maxlength: [
-      10,
-      "A phone number must have less or equal then 10 characters",
-    ],
-  },
+
   password: {
     type: String,
     required: [true, "Please provide a password!"],
     minlength: [4, "A password must have more or equal then 8 characters"],
-    select: false,
+  },
+  logInCounter: {
+    type: Number,
+    default: 0,
   },
   mess: {
     type: [
@@ -147,5 +144,17 @@ const userSchema = new mongoose.Schema({
   },
   attendance: [subjectItem],
 });
+userSchema.statics.loginCheck = async function (email, password) {
+  const user = await this.findOne({ email });
+  console.log(user);
+  if (user) {
+    const auth = await bcrypt.compare(password, user.password);
 
+    if (auth) {
+      return user;
+    }
+    throw Error("Wrong Password");
+  }
+  throw Error("Wrong email");
+};
 module.exports = userSchema;
