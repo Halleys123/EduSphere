@@ -1,4 +1,6 @@
-const assignmentsBox = document.querySelector(".main__content__assignments");
+const assignmentsBox = document.querySelector(
+  ".main__content__assignments__items"
+);
 const messageBox = document.querySelector(".main__content__annoucements");
 const bodyitems = document.querySelectorAll(".bodyitem");
 const periods = document.querySelectorAll(".period");
