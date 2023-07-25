@@ -25,6 +25,14 @@ fetch("http://127.0.0.1:3000/api/v1/fetchUser", {
       });
     dataInsertion(data.data);
     frosted();
+    document.querySelectorAll(".main__content__box").forEach((item) => {
+      item.addEventListener("click", () => {
+        localStorage.setItem("subject", item.getAttribute("name"));
+        location.href = `/Frontend/pages/attend1/attend2.html?subject=${item.getAttribute(
+          "name"
+        )}`;
+      });
+    });
   })
   .catch((err) => {
     notValid();
@@ -61,7 +69,9 @@ const createBox = (attendenceItem, index) => {
     },
   };
   optionsForChart.push(options);
-  let html = `<div class="main__content__box"name=${attendenceItem.subjectName}>
+  let html = `<div class="main__content__box" name=${
+    attendenceItem.subjectName
+  }>
   <span class="main__content__box__head">${attendenceItem.subjectName}</span>
   <div class="main__content__box__details">
       <div class="main__content__box__details__chart"></div>
