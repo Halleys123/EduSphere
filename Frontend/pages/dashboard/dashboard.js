@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 common();
-token = urlParams.get("token");
+const token = urlParams.get("token");
 if (token) {
   localStorage.setItem("token", token);
   location.href = "/Frontend/pages/dashboard/index.html";

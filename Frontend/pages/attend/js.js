@@ -1,3 +1,5 @@
+let data;
+
 var options = {
   series: [4, 32, 2],
   labels: ["Absence", "Presence", "Unknown"],
