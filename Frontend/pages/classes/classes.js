@@ -2,14 +2,22 @@
 // so as to save name and link separately
 // Todo - Add funcitonality to submit button
 
-const box = document.querySelector(".right");
-
+const box = document.querySelector(".main__content");
+common();
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("http://127.0.0.1:3000/api/v1/assignments/2022C")
+  fetch("http://127.0.0.1:3000/api/v1/assignments", {
+    method: "GET",
+    headers: {
+      Authentication: `Bearer ${localStorage.getItem("token")}`,
+    },
+  })
     .then((res) => res.json())
     .then((data) => {
-      box.innerHTML = "";
+      console.log(data);
       console.log(data.data.subjects);
+      dataInsertion(data);
+      frosted();
+      box.innerHTML = "";
       data.data.subjects.forEach((subject) => {
         box.insertAdjacentHTML("beforeend", subjectBoxGenerator(subject));
       });
@@ -22,6 +30,10 @@ window.addEventListener("DOMContentLoaded", () => {
             window.open(fileBox.getAttribute("href"));
           });
         });
+    })
+    .catch((err) => {
+      console.log(err);
+      notValid();
     });
 });
 function subjectBoxGenerator(subject) {

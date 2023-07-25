@@ -4,6 +4,12 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
 }
+.main__content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
 .right__subject {
   width: 100%;
   min-height: 10rem;

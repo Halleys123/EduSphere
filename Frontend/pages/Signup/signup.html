@@ -1,99 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="content">
-      <div class="content__image">
-        <img src="../../images/login1.png" class="content__image--img" />
-      </div>
-      <div class="content__body">
-        <h1 class="content__body__head">Signup</h1>
-        <div class="content__body__main">
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Name</span>
-            <div class="content__body__main__item--box">
-              <input
-                class="content__body__main__item--box__input"
-                name="name"
-                placeholder="Rahul Sharma"
-              />
-            </div>
-          </div>
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Email</span>
-            <div class="content__body__main__item--box">
-              <input
-                class="content__body__main__item--box__input"
-                name="email"
-                placeholder="00aaa2022@nith.ac.in"
-              />
-            </div>
-          </div>
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Year</span>
-            <div class="content__body__main__item--box">
-              <input
-                class="content__body__main__item--box__input"
-                name="session"
-                placeholder="2022"
-              />
-            </div>
-          </div>
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Section</span>
-            <div class="content__body__main__item--box">
-              <input
-                class="content__body__main__item--box__input"
-                name="section"
-                placeholder="C"
-              />
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Hostel</span>
-            <div class="content__body__main__item--box">
-              <!-- dropdown -->
-              <select
-                class="content__body__main__item--box__input"
-                name="hostel"
-              >
-                <option value="1">Himadri</option>
-                <option value="2">Kailash</option>
-                <option value="3">Karakoram</option>
-                <option value="4">Nilgiri</option>
-                <option value="5">Shivalik</option>
-                <option value="6">Udaigiri</option>
-                <option value="7">Zanskar</option>
-              </select>
-            </div>
+<body>
+  <div class="content">
+    <div class="content__image">
+      <img src="../../images/login1.png" class="content__image--img" />
+    </div>
+    <div class="content__body">
+      <h1 class="content__body__head">Signup</h1>
+      <div class="content__body__main">
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Name</span>
+          <div class="content__body__main__item--box">
+            <input class="content__body__main__item--box__input" name="name" placeholder="Rahul Sharma" />
           </div>
-          <div class="content__body__main__item">
-            <span class="content__body__main__item--head"> Password</span>
-            <div class="content__body__main__item--box">
-              <input
-                class="content__body__main__item--box__input"
-                name="password"
-                placeholder=""
-              />
-            </div>
-          </div>
-
-          <input
-            type="button"
-            name="button"
-            value="Signup"
-            class="content__body__main__btn"
-          />
         </div>
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Email</span>
+          <div class="content__body__main__item--box">
+            <input class="content__body__main__item--box__input" name="email" placeholder="00aaa2022@nith.ac.in" />
+          </div>
+        </div>
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Year</span>
+          <div class="content__body__main__item--box">
+            <input class="content__body__main__item--box__input" name="session" placeholder="2022" />
+          </div>
+        </div>
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Section</span>
+          <div class="content__body__main__item--box">
+            <input class="content__body__main__item--box__input" name="section" placeholder="C" />
+          </div>
+        </div>
+
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Hostel</span>
+          <div class="content__body__main__item--box">
+            <!-- dropdown -->
+            <select class="content__body__main__item--box__input" name="hostel">
+              <option value="Himadri">Himadri</option>
+              <option value="2">Kailash</option>
+              <option value="3">Karakoram</option>
+              <option value="4">Nilgiri</option>
+              <option value="5">Shivalik</option>
+              <option value="6">Udaigiri</option>
+              <option value="7">Zanskar</option>
+            </select>
+          </div>
+        </div>
+        <div class="content__body__main__item">
+          <span class="content__body__main__item--head"> Password</span>
+          <div class="content__body__main__item--box">
+            <input class="content__body__main__item--box__input" name="password" placeholder="" />
+          </div>
+        </div>
+
+        <input type="button" name="button" value="Signup" class="content__body__main__btn" />
       </div>
     </div>
-    <script src="./signUp.js"></script>
-  </body>
+  </div>
+  <script src="./signUp.js"></script>
+</body>
+
 </html>
