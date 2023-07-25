@@ -5,5 +5,9 @@ const emailSchema = mongoose.Schema({
     required: true,
     unique: true,
   },
+  collectionName: {
+    type: String,
+    required: true,
+  },
 });
 module.exports = mongoose.model("emailList", emailSchema);

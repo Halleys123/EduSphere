@@ -1,5 +1,5 @@
 const express = require("express");
-
+const auth = require("../utils/auth");
 const {
   getData,
   postData,
@@ -8,8 +8,7 @@ const {
 
 const router = express.Router();
 
-router.route("/assignments").get(getData);
-router.route("/assignments/:section").get(getDataMore);
+router.route("/assignments/").get(auth, getDataMore);
 router.route("/assignments").post(postData);
 
 module.exports = router;

@@ -6,16 +6,16 @@ const signUpRouter = require("./routes/signUpRouter");
 const cors = require("cors");
 const express = require("express");
 const cookieParser = require("cookie-parser");
+const logInRouter = require("./routes/loginRouter");
 const app = express();
-
-app.use(express.json());
-app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/v1", assignmentRoute);
 app.use("/api/v1", messRoute);
 app.use("/api/v1", signUpRouter);
+app.use("/api/v1", logInRouter);
 app.all("*", (req, res, next) => {
   const err = new CustomError("Page not found", 404);
   next(err);

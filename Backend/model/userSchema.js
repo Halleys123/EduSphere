@@ -41,6 +41,7 @@ const subjectItem = new mongoose.Schema({
   attendance: [attendanceItem],
 });
 const userSchema = new mongoose.Schema({
+  hostel: { required: [true, "hostel required"], type: String },
   name: {
     type: String,
     required: [true, "Please tell us your name!"],

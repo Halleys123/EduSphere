@@ -1,3 +1,4 @@
+common();
 const bodyitems = document.querySelectorAll(".bodyitem");
 const periods = document.querySelectorAll(".period");
 const teacher = document.querySelectorAll(".teacher");
@@ -68,10 +69,20 @@ function timetableArrayGenerate(data) {
   return timetableArray;
 }
 window.addEventListener("DOMContentLoaded", () => {
-  fetch(`http://127.0.0.1:3000/api/v1/assignments/${selectedVariables.section}`)
+  fetch(`http://127.0.0.1:3000/api/v1/assignments/`, {
+    method: "GET",
+    headers: {
+      authentication: `Bearer ${localStorage.getItem("token")}`,
+    },
+  })
     .then((res) => res.json())
     .then((data) => {
       pushTimeTable(timetableArrayGenerate(data.data.timetable));
+      dataInsertion(data);
+      frosted();
+    })
+    .catch(() => {
+      notValid();
     });
 });
 item.forEach((items, index) => {

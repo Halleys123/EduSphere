@@ -41,5 +41,6 @@ const temporaryUserSchema = mongoose.Schema({
     default: Date.now,
     expires: 180, // TTL expiration in seconds (3 minutes)
   },
+  hostel: { required: [true, "hostel required"], type: String },
 });
 module.exports = mongoose.model("usersNotVerified", temporaryUserSchema);
