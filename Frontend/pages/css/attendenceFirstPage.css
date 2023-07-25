@@ -1,0 +1,74 @@
+.box_main--heading {
+  color: white;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+
+.box_main_subject {
+  background-color: white;
+  width: 50%;
+  border-radius: 4px;
+}
+
+/* subject name and info box*/
+
+.box_main_subject--name {
+  color: black;
+  font-size: 25px;
+  margin: 10px 10px;
+}
+.box_main_subject_info {
+  color: #1e1f4b;
+  display: flex;
+  gap: 10px;
+  margin: 10px 10px;
+}
+
+/* chart */
+.box_main_subject_info--chart {
+  background-color: #7f9a27;
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  padding: 160px 0;
+  border-radius: 200px;
+  margin-bottom: 10px;
+}
+
+/* normal data */
+.box_main_subject_info_data {
+  width: 50%;
+  font-size: 20px;
+}
+.box_main_subject_info_data--present {
+  background-color: #d4ebd4;
+  text-align: center;
+  align-self: center;
+  border-radius: 2px;
+  margin: 20px 20px;
+  padding: 10px 0px;
+}
+.box_main_subject_info_data--Absent {
+  background-color: #ebd8d4;
+  text-align: center;
+  align-self: center;
+  border-radius: 2px;
+  margin: 20px 20px;
+  padding: 10px 0px;
+}
+.box_main_subject_info_data--Unknown {
+  background-color: #ffecba;
+  text-align: center;
+  align-self: center;
+  border-radius: 2px;
+  margin: 20px 20px;
+  padding: 10px 0px;
+}
+.box_main_subject_info_data--Percentage {
+  background-color: #fff2e7;
+  text-align: center;
+  align-self: center;
+  border-radius: 2px;
+  margin: 20px 20px;
+  padding: 10px 0px;
+}

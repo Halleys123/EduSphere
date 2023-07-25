@@ -1,0 +1,114 @@
+/* 
+font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+  text-align: center;
+  padding: 0;
+  background-color: #eae8e8; */
+
+/* colors
+  #1e1f4b
+  #fff2e7
+  #6ddf7f
+  #ff6363
+  #f1fcff
+  #000000
+  #ffffff
+  #d4d5eb
+   */
+
+.box_main {
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* subject heading/name */
+.box_main_sub--name {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* header or box_main_sub_attendance_info */
+
+.box_main_sub_attendance_info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.box_main_sub_attendance_info--name--present {
+  width: 20%;
+}
+.box_main_sub_attendance_info--name {
+  background-color: #fff2e7;
+  color: #1e1f4b;
+  margin-bottom: 10px;
+  padding: 52px 40px;
+  text-align: center;
+  align-self: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.box_main_sub_attendance_info--present {
+  background-color: #6ddf7f;
+  color: #ffffff;
+  text-align: center;
+  align-self: center;
+  padding: 51px 40px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+.box_main_sub_attendance_info--absent {
+  text-align: center;
+  background-color: #ff6363;
+  color: #ffffff;
+  width: 40%;
+  align-self: center;
+  padding: 132px 40px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+.box_main_sub_attendance_info--percentage {
+  text-align: center;
+  background-color: #f1fcff;
+  color: #000000;
+  width: 40%;
+  align-self: center;
+  padding: 132px 40px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+/* artical  or box_main_sub_general_info*/
+
+article {
+  background-color: #d4d5eb;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.box_main_sub_general_info {
+  background-color: #f1fcff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+/* .box_main_sub_general_info--SerialNumber {
+  font-size: 20px;
+}
+.box_main_sub_general_info--Date {
+  font-size: 20px;
+}
+.box_main_sub_general_info--Time {
+  font-size: 20px;
+}
+.box_main_sub_general_info--PresenceStatus {
+  font-size: 20px;
+}
+.box_main_sub_general_info--Notes {
+  font-size: 20px;
+} */
