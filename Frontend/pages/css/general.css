@@ -333,3 +333,6 @@ html {
     transform: rotate(360deg);
   }
 }
+.goAway {
+  display: none;
+}

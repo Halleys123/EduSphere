@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Details | Username</title>
+    <title>Dashboard | Username</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/attend2.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="./feedback.css" />
 </head>
 
 <body>
@@ -24,6 +25,7 @@
             </div>
             <p class="left__logo--text">.WebFlow</p>
         </div>
+
 
         <div class="left__navi">
             <div class="left__navi__top left__navi__item">
@@ -108,12 +110,9 @@
     <main class="main">
         <div class="main__nav">
             <div class="main__nav__pageName ">
-                <p class="main__nav__pageName--text dropdown__element dropdown__element--0">Details</p>
-                <p href="../attend/attend.html"
-                    class="changePageMenu main__nav__pageName--text dropdown__element dropdown__element--1">Attendance
-                </p>
-                <p href="../dashboard/index.html"
-                    class="changePageMenu main__nav__pageName--text dropdown__element dropdown__element--2">Dashboard
+                <p class="main__nav__pageName--text dropdown__element dropdown__element--0">Mess</p>
+                <p href="../hostel/hostel.html"
+                    class="main__nav__pageName--text dropdown__element dropdown__element--1 changePageMenu">Hostel
                 </p>
             </div>
 
@@ -155,148 +154,32 @@
         </div>
         <div class="box">
             <div class="main__content">
-                <div class="main__content__head">
-                    <span class="main__content__head--text">Engineering Chemistry</span>
+                <div class="main__content__top">
+                    <p class="main__content__top--textTop">
+                        Feedback Form
+                    </p>
+                    <p class="main__content__top--textBot">Help us improve! We value your feedback. Please take a moment
+                        to share your thoughts about our
+                        website. Your feedback will assist us in enhancing your browsing experience. In your opinion,
+                        what are some aspects of our website that we should keep, and what areas do you think need
+                        improvement? We appreciate your input and look forward to making your experience even better!
+                    </p>
                 </div>
-                <div class="main__content__first"></div>
-                <div class="main__content__second">
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">S. No.</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">Date</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Time</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Status</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Reason</span>
-                        </div>
+                <p class="main__content__middle">Please Fill Up the Following Form</p>
+                <div class="main__content__bottom">
+                    <div class="main__content__bottom--feild">
+                        <p class="main__content__bottom--feild--text">Name</p>
+                        <input type="text" class="main__content__bottom--feild--item"></input>
                     </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
+                    <div class="main__content__bottom--feild">
+                        <p class="main__content__bottom--feild--text">About</p>
+                        <input type="text" class="main__content__bottom--feild--item"></input>
                     </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
+                    <div class="main__content__bottom--feild main__content__bottom--feild--special">
+                        <p class="main__content__bottom--feild--text">Description</p>
+                        <input type="text" class="main__content__bottom--feild--item"></input>
                     </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
-                    </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
-                    </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
-                    </div>
-                    <div class="main__content__second__item ">
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">1</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text    ">22 March 2023</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">11:00 AM</span>
-                            <span class="main__content__second__item--item--text">02:00 PM</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">Absent</span>
-                            <span class="main__content__second__item--item--text">Present</span>
-                        </div>
-                        <div class="main__content__second__item--item">
-                            <span class="main__content__second__item--item--text">-</span>
-                            <span class="main__content__second__item--item--text">-</span>
-                        </div>
-                    </div>
+                    <input type="button" value="Submit" class="main__button"></input>
                 </div>
             </div>
         </div>
@@ -305,6 +188,6 @@
 <script src="../../js/general.js"></script>
 <script type="module" src="../../js/dropdownElement.js"></script>
 <script type="module" src="../../js/script.js"></script>
-
+<script src="js.js"></script>
 
 </html>

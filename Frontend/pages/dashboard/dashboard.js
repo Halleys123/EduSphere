@@ -134,7 +134,7 @@ function announcementGenerate(data) {
        ${announcement.message}
      </p>
    </div>
-   <button>Clear</button>
+   <button class="clearButton">Clear</button>
  </div>`;
   });
   return html;

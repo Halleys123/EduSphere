@@ -2,14 +2,14 @@
   display: grid;
   overflow-y: scroll;
   width: 100%;
-  height: 125rem;
+  /* height: 125rem; */
   flex: 1 0;
   left: 2rem;
   top: 10rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   row-gap: 1rem;
   padding: 3rem 2rem 2rem 2rem;
 }
@@ -17,10 +17,12 @@
   background-color: #f1fcff;
   grid-column: 1/3;
   grid-row: 1/3;
+
   border-radius: 0.5rem;
   padding: 1rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 .main__content__menu--head {
   height: 3%;
@@ -103,38 +105,39 @@
 }
 .main__content__updates--content {
   display: flex;
-  flex-direction: row;
-  gap: 5%;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: #d6d4eb;
   width: 100%;
-  height: 15%;
+  min-height: 7.2rem;
   border-radius: 0.4rem;
+  padding: 0rem 1rem;
 }
 .main__content__updates--content--left {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.main__content__updates--content button {
+.main__content__updates--content--right button {
   background-color: #b18256;
   color: white;
+  outline: none;
+  border: none;
   border-color: #b18256;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 0.2rem;
-  height: 40%;
-  font-size: 0.8rem;
+  height: 100%;
+
+  font-size: 1.2rem;
   text-align: center;
   justify-content: center;
 }
-.main__content__updates--content--left--text--subject {
+.main__content__updates--content--ledt--text--subject {
   font-size: 1.2rem;
   font-weight: 600;
 }
 .main__content__updates--content--left--text--date {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .main__content__rating {
   background-color: #f1fcff;
@@ -180,8 +183,6 @@
 }
 .main__content__Complaints {
   background-color: #f1fcff;
-  grid-column: 1/2;
-  grid-row: 3/4;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -202,6 +203,13 @@
   width: 100%;
   height: 12%;
   border-radius: 0.4rem;
+}
+.main__content__Complaints__items {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 2rem; */
+  gap: 1rem;
 }
 .main__content__Complaints--content button {
   background-color: #b18256;
@@ -335,4 +343,32 @@
   font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
-}/*# sourceMappingURL=mess.css.map */
+} /*# sourceMappingURL=mess.css.map */
+
+#button {
+  background-color: #b18256;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  /* padding: 1.2rem 1.6rem; */
+  transition: all 0.3s;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #b18f70;
+}
+#button:active {
+  transform: scale(0.96);
+  background-color: #b37c49;
+}
+.main__content__assignments__items {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-height: 30rem;
+}
+.hide {
+  display: none;
+}

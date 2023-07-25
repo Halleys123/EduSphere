@@ -28,6 +28,11 @@ const ratingItem = new mongoose.Schema({
   date: Date,
   rating: { breakfast: rateItem, starCount: [starCounts] },
 });
+const updateItem = new mongoose.Schema({
+  item: String,
+  message: String,
+  date: Date,
+});
 const messSchema = new mongoose.Schema({
   hostel: {
     type: String,
@@ -43,6 +48,7 @@ const messSchema = new mongoose.Schema({
     menu: [menuDay],
     snacks: [snackDay],
     rating: [ratingItem],
+    updates: [updateItem],
   },
 });
 
