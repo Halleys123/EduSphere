@@ -1,6 +1,6 @@
 .main__content {
   display: grid;
-  overflow-y: scroll;
+  overflow-y: hidden;
   width: 100%;
   height: 125rem;
   flex: 1 0;

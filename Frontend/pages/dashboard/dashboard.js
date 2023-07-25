@@ -1,3 +1,13 @@
+const urlParams = new URLSearchParams(window.location.search);
+common();
+token = urlParams.get("token");
+if (token) {
+  localStorage.setItem("token", token);
+  location.href = "/Frontend/pages/dashboard/index.html";
+} else {
+  console.log("login first");
+}
+
 const assignmentsBox = document.querySelector(
   ".main__content__assignments__items"
 );
@@ -39,9 +49,16 @@ const selectedVariables = {
   subSection: GlobalVariables.subSection[1],
 };
 window.addEventListener("DOMContentLoaded", () => {
-  fetch(`http://127.0.0.1:3000/api/v1/assignments/${selectedVariables.section}`)
+  fetch(`http://127.0.0.1:3000/api/v1/assignments/`, {
+    method: "GET",
+    headers: {
+      Authentication: `Bearer ${localStorage.getItem("token")}`,
+    },
+  })
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
+      dataInsertion(data);
       console.log("data:", data.data.section);
       document
         .querySelectorAll(".main__content__assignments--content")
@@ -62,7 +79,10 @@ window.addEventListener("DOMContentLoaded", () => {
         "announcement"
       );
       pushTimeTable(timetableArrayGenerate(data.data.timetable));
-      messageBox.insertAdjacentHTML("beforeend", data1);
+      frosted(data);
+    })
+    .catch((err) => {
+      notValid();
     });
 });
 
