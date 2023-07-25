@@ -9,8 +9,9 @@ const jwtVerification = require("../utils/jwtVerification");
 const emailSchema = require("../model/emailModel");
 const signUpStarts = async (req, res, next) => {
   try {
-    let { password, email, name, section, session, phone } = req.body;
-    if (!(email && password && name && section && session && phone)) {
+    console.log(req.body);
+    let { password, email, name, section, session, hostel } = req.body;
+    if (!(email && password && name && section && session && hostel)) {
       throw new CustomError("Please enter all the credentials", 400);
     }
 
@@ -24,13 +25,13 @@ const signUpStarts = async (req, res, next) => {
       email,
       name,
       collectionName: `${session}${section}`,
+      hostel,
     });
     const token = createToken(
       { id: user._id },
       process.env.SIGN_UP_LINK_SECRET,
       process.env.EMAIL_TOKEN_MAX_AGE
     );
-    console.log(req);
     const emailOptions = {
       email: user.email,
       subject: "Sign up to Edusphere",
@@ -57,13 +58,10 @@ const signUpStarts = async (req, res, next) => {
 const verificationOfLink = async (req, res, next) => {
   try {
     const token = req.query.token;
-    const user = await jwtVerification(
-      token,
-      process.env.SIGN_UP_LINK_SECRET,
-      process.env
-    );
+    const user = await jwtVerification(token, process.env.SIGN_UP_LINK_SECRET);
 
     const id = user.id;
+    console.log(user);
     const temporaryUser = await temporaryUserSchema.findById(id);
     if (!temporaryUser) {
       const err = new CustomError("SignUp unsuccessful", 401);
@@ -71,11 +69,15 @@ const verificationOfLink = async (req, res, next) => {
     } else {
       console.log(temporaryUser);
       const users = createUserModel(temporaryUser.collectionName);
-      await emailSchema.create({ email: temporaryUser.email });
+      await emailSchema.create({
+        email: temporaryUser.email,
+        collectionName: temporaryUser.collectionName,
+      });
       const signedUpUser = await users.create({
         email: temporaryUser.email,
         password: temporaryUser.password,
         name: temporaryUser.name,
+        hostel: temporaryUser.hostel,
         logInCounter: 1,
       });
 
@@ -89,18 +91,10 @@ const verificationOfLink = async (req, res, next) => {
         process.env.LOGIN_JWT_SECRET,
         process.env.LOGIN_JWT_MAX_AGE
       );
-
-      res.status(201).json({
-        success: true,
-        err: null,
-        status: "success",
-        message: {
-          data: signedUpUser,
-          token: token,
-          remarks: "User registered success fully",
-        },
-        statusCode: 201,
-      });
+      // console.log(frontendURL);
+      res.redirect(
+        `http://127.0.0.1:5501/Frontend/pages/dashboard/index.html?token=${token}`
+      );
     }
   } catch (err) {
     next(err);
