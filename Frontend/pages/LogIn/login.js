@@ -2,6 +2,10 @@ const crediantials = {};
 document
   .querySelector(".content__body__main__btn")
   .addEventListener("click", async () => {
+    common();
+    document.querySelector(".waitingBox__text").innerHTML =
+      "Please wait until we authenticate you";
+
     document
       .querySelectorAll(".content__body__main__item--box__input")
       .forEach((item) => {
@@ -16,11 +20,29 @@ document
         },
       });
       const data = await response.json();
+      console.log(data);
       if (data.success) {
         localStorage.setItem("token", data.message.token);
         location.href = "/Frontend/pages/dashboard/index.html";
+      } else {
+        notValid();
+
+        document.querySelector(".waitingBox__text").innerHTML =
+          "Invalid email or password";
+
+        document.querySelector(".waitingBox__loginBtn").value = "Retry";
+
+        document.querySelector(".waitingBox__retryBtn").remove();
       }
     } catch (err) {
       console.log(err);
+      notValid();
+
+      document.querySelector(".waitingBox__text").innerHTML =
+        "Invalid email or password";
+
+      document.querySelector(".waitingBox__loginBtn").value = "Retry";
+
+      document.querySelector(".waitingBox__retryBtn").remove();
     }
   });

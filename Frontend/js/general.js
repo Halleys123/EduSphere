@@ -9,12 +9,14 @@ document.querySelectorAll(".changePageMenu").forEach((item) => {
     window.location.href = e.currentTarget.getAttribute("href");
   });
 });
-document
-  .querySelectorAll(".left__navi__bottom__item")[1]
-  .addEventListener("click", () => {
-    localStorage.removeItem("token");
-    location.href = "/Frontend/pages/login/login.html";
-  });
+if (document.querySelectorAll(".left__navi__bottom__item")[1]) {
+  document
+    .querySelectorAll(".left__navi__bottom__item")[1]
+    .addEventListener("click", () => {
+      localStorage.removeItem("token");
+      location.href = "/Frontend/pages/login/login.html";
+    });
+}
 const common = () => {
   document.querySelector("body").insertAdjacentHTML(
     "afterbegin",
