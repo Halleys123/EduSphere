@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(err);
+      console.log(data);
     })
     .catch((err) => {
       console.log(err);
     });
 });
+
+function itemGenerate(data) {}

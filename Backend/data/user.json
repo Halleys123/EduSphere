@@ -82,51 +82,51 @@
         {
           "date": "2018-01-01T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
-          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "status": ["Present"],
+          "time": ["2018-01-01T12:00:00Z"],
+          "reason": ["-"]
         },
         {
           "date": "2018-01-02T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         },
         {
           "date": "2018-01-03T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         },
         {
           "date": "2018-01-04T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         },
         {
           "date": "2018-01-05T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         },
         {
           "date": "2018-01-06T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         },
         {
           "date": "2018-01-07T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["-", "Sick"]
         }
       ]
     },
@@ -140,42 +140,42 @@
         {
           "date": "2018-01-01T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-02T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-03T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-04T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-05T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-06T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
           "reason": ["", ""]
         }
@@ -191,42 +191,42 @@
         {
           "date": "2018-01-01T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-02T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-03T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-04T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-05T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-06T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
           "reason": ["", ""]
         }
@@ -242,42 +242,42 @@
         {
           "date": "2018-01-01T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-02T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-03T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-04T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-05T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
           "reason": ["", ""]
         },
         {
           "date": "2018-01-06T12:00:00Z",
           "classes": 2,
-          "status": ["present", "absent"],
+          "status": ["Present", "Absent"],
           "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
           "reason": ["", ""]
         }
