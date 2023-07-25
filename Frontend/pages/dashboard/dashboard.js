@@ -57,6 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
   })
     .then((res) => res.json())
     .then((data) => {
+      myData = data;
       console.log(data);
       dataInsertion(data);
       console.log("data:", data.data.section);
@@ -80,6 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
       );
       pushTimeTable(timetableArrayGenerate(data.data.timetable));
       frosted(data);
+      makeChart(data);
     })
     .catch((err) => {
       notValid();
@@ -211,3 +213,179 @@ item.forEach((items, index) => {
     console.log(selectedVariables.timeTableType);
   });
 });
+
+function makeChart(data) {
+  console.log(data.user.attendance);
+  let subjects = [];
+  data.user.attendance.forEach((item) => {
+    subjects.push(item.subjectName);
+  });
+  let attendence = [];
+  data.user.attendance.forEach((item) => {
+    attendence.push(item.present);
+  });
+  let absent = [];
+  data.user.attendance.forEach((item) => {
+    absent.push(item.absent);
+  });
+  let unknown = [];
+  data.user.attendance.forEach((item) => {
+    unknown.push(item.unknown);
+  });
+
+  console.log(unknown);
+  // var options = {
+  //   series: [
+  //     {
+  //       name: "Attendance",
+  //       data: attendence,
+  //     },
+  //   ],
+  //   chart: {
+  //     height: 350,
+  //     type: "bar",
+  //   },
+  //   plotOptions: {
+  //     bar: {
+  //       borderRadius: 6,
+  //       dataLabels: {
+  //         position: "top", // top, center, bottom
+  //       },
+  //     },
+  //   },
+  //   dataLabels: {
+  //     enabled: true,
+  //     formatter: function (val) {
+  //       return val;
+  //     },
+  //     offsetY: -20,
+  //     style: {
+  //       fontSize: "12px",
+  //       colors: ["#304758"],
+  //     },
+  //   },
+
+  //   xaxis: {
+  //     categories: subjects,
+  //     position: "top",
+  //     axisBorder: {
+  //       show: false,
+  //     },
+  //     axisTicks: {
+  //       show: false,
+  //     },
+  //     crosshairs: {
+  //       fill: {
+  //         type: "gradient",
+  //         gradient: {
+  //           colorFrom: "#D8E3F0",
+  //           colorTo: "#BED1E6",
+  //           stops: [0, 100],
+  //           opacityFrom: 0.4,
+  //           opacityTo: 0.5,
+  //         },
+  //       },
+  //     },
+  //     tooltip: {
+  //       enabled: true,
+  //     },
+  //   },
+  //   yaxis: {
+  //     axisBorder: {
+  //       show: false,
+  //     },
+  //     axisTicks: {
+  //       show: false,
+  //     },
+  //     labels: {
+  //       show: false,
+  //       formatter: function (val) {
+  //         return val;
+  //       },
+  //     },
+  //   },
+  //   title: {
+  //     text: "Subjectwise Attendance",
+  //     floating: true,
+  //     offsetY: 330,
+  //     align: "center",
+  //     style: {
+  //       color: "#444",
+  //     },
+  //   },
+  // };
+  var options = {
+    series: [
+      {
+        name: "Present",
+        data: attendence,
+      },
+      {
+        name: "Absent",
+        data: absent,
+      },
+      {
+        name: "Unknown",
+        data: unknown,
+      },
+    ],
+    chart: {
+      type: "bar",
+      height: 350,
+      stacked: true,
+      toolbar: {
+        show: true,
+      },
+      zoom: {
+        enabled: true,
+      },
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          legend: {
+            position: "bottom",
+            offsetX: -10,
+            offsetY: 0,
+          },
+        },
+      },
+    ],
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        borderRadius: 10,
+        dataLabels: {
+          total: {
+            enabled: true,
+            style: {
+              fontSize: "13px",
+              fontWeight: 900,
+            },
+          },
+        },
+      },
+    },
+    xaxis: {
+      type: "Subjects",
+      categories: subjects,
+    },
+    legend: {
+      position: "right",
+      offsetY: 40,
+    },
+    fill: {
+      opacity: 1,
+    },
+  };
+
+  // Create the chart
+  const chart = new ApexCharts(
+    document.querySelector(".main__content__attendance"),
+    options
+  );
+
+  // Render the chart
+  chart.render();
+}
