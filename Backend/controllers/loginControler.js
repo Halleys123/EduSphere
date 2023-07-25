@@ -20,6 +20,7 @@ const loginController = async (req, res, next) => {
       if (!user) throw new CustomError("user does not exisit", 412);
       else {
         const isMatch = await bcrypt.compare(password, user.password);
+        console.log(isMatch);
         const token = createToken(
           {
             id: user._id,
@@ -37,10 +38,13 @@ const loginController = async (req, res, next) => {
               token: token,
             },
           });
+        } else {
+          throw new CustomError("Inavalid email or password", 403);
         }
       }
     }
   } catch (err) {
+    console.log(err);
     return next(err);
   }
 };
