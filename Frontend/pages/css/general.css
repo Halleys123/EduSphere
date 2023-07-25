@@ -336,3 +336,48 @@ html {
 .goAway {
   display: none;
 }
+.waitingBox__crossBox {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.waitingBox {
+  height: fit-content;
+  padding: 2.4rem 2.4rem;
+}
+.waitingBox__crossBox > img {
+  width: 100%;
+  height: 100%;
+}
+.waitingBox__text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0c0d21;
+}
+
+.waitingBox__btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  width: fit-content;
+  /* align-self: flex-start; */
+  /* justify-content: flex-start; */
+}
+.waitingBox__Btn {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  background-color: #0c0d21;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.waitingBox__loginBtn:hover {
+  background-color: #3498db;
+}
+.waitingBox__retryBtn:hover {
+  background-color: #b18256;
+}

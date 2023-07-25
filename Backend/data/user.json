@@ -2,11 +2,12 @@
   "name": "Test User",
   "email": "test@nith.ac.in",
   "photo": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
-  "phone": "1234567890",
-  "password": "test",
+  "password": "$2b$10$A6TN7FOxcrZvJzh4PXGKPujUcQbHnsCu5Rq8XznAh.hb6hHQFxvCi",
+  "hostel": "Himadri",
+  "logInCounter": 1,
   "mess": [
     {
-      "date": "2018-01-01",
+      "date": "2018-01-01T12:00:00Z",
       "breakfast": {
         "rating": 5,
         "comments": [
@@ -56,14 +57,14 @@
   ],
   "complaints": [
     {
-      "date": "2018-01-01",
+      "date": "2018-01-01T12:00:00Z",
       "type": "breakfast",
       "complaint": "Food is not good",
       "status": "pending",
       "isSeen": false
     },
     {
-      "date": "2018-01-01",
+      "date": "2018-01-01T12:00:00Z",
       "type": "lunch",
       "complaint": "Food is not good",
       "status": "pending",
@@ -79,18 +80,104 @@
       "absent": 5,
       "attendance": [
         {
-          "date": "2018-01-01",
+          "date": "2018-01-01T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
           "reason": ["", "sick"]
         },
         {
-          "date": "2018-01-01",
+          "date": "2018-01-02T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
           "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-03T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-04T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-05T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-06T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        },
+        {
+          "date": "2018-01-07T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", "sick"]
+        }
+      ]
+    },
+    {
+      "subjectName": "Engineering Physics",
+      "totalClasses": 30,
+      "present": 20,
+      "unknown": 5,
+      "absent": 5,
+      "attendance": [
+        {
+          "date": "2018-01-01T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-02T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-03T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-04T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-05T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-06T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
+          "reason": ["", ""]
         }
       ]
     },
@@ -102,41 +189,97 @@
       "absent": 5,
       "attendance": [
         {
-          "date": "2018-01-01",
+          "date": "2018-01-01T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["", ""]
         },
         {
-          "date": "2018-01-01",
+          "date": "2018-01-02T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
-          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-03T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-04T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-05T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-06T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
+          "reason": ["", ""]
         }
       ]
     },
     {
-      "subjectName": "Engineering Computer",
+      "subjectName": "Engineering Drawing",
       "totalClasses": 30,
       "present": 20,
       "unknown": 5,
       "absent": 5,
       "attendance": [
         {
-          "date": "2018-01-01",
+          "date": "2018-01-01T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
           "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "reason": ["", ""]
         },
         {
-          "date": "2018-01-01",
+          "date": "2018-01-02T12:00:00Z",
           "classes": 2,
           "status": ["present", "absent"],
-          "time": ["2018-01-01T12:00:00Z", "2018-01-01T12:00:00Z"],
-          "reason": ["", "sick"]
+          "time": ["2018-01-02T12:00:00Z", "2018-01-02T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-03T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-03T12:00:00Z", "2018-01-03T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-04T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-04T12:00:00Z", "2018-01-04T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-05T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-05T12:00:00Z", "2018-01-05T12:00:00Z"],
+          "reason": ["", ""]
+        },
+        {
+          "date": "2018-01-06T12:00:00Z",
+          "classes": 2,
+          "status": ["present", "absent"],
+          "time": ["2018-01-06T12:00:00Z", "2018-01-06T12:00:00Z"],
+          "reason": ["", ""]
         }
       ]
     }

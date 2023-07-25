@@ -1,3 +1,4 @@
+common();
 let hostel = "KBH";
 let today = new Date()
   .toLocaleDateString("en-in", { weekday: "long" })
@@ -7,12 +8,20 @@ let foodItems = document.querySelectorAll(
 );
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch(`http://127.0.0.1:3000/api/v1/mess/${hostel}`)
+  fetch(`http://127.0.0.1:3000/api/v1/mess`, {
+    method: "GET",
+    headers: {
+      Authentication: `Bearer ${localStorage.getItem("token")}`,
+    },
+  })
     .then((res) => res.json())
     .then((data) => {
+      dataInsertion(data.message);
+      console.log(data);
+      frosted();
       for (let i = 0; i < 5; i++) {
         // console.log(data.data.mess.menu[i]);
-        let menu = data.data.mess.menu[i];
+        let menu = data.message.data.mess.menu[i];
         // console.log(menu);
         foodItems.forEach((item, index) => {
           let foods = "";
@@ -24,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
       }
       let html = ``;
-      data.data.mess.updates.forEach((item) => {
+      data.message.data.mess.updates.forEach((item) => {
         html += itemGenerate(item);
       });
       document.querySelector(".main__content__assignments__items").innerHTML =
@@ -32,6 +41,10 @@ window.addEventListener("DOMContentLoaded", () => {
       document
         .querySelector(".main__content__assignments__items")
         .insertAdjacentHTML("beforeend", html);
+    })
+    .catch((err) => {
+      notValid();
+      console.log(err);
     });
 });
 

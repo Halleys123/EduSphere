@@ -26,9 +26,23 @@ document
         location.href = "/Frontend/pages/dashboard/index.html";
       } else {
         notValid();
+
+        document.querySelector(".waitingBox__text").innerHTML =
+          "Invalid email or password";
+
+        document.querySelector(".waitingBox__loginBtn").value = "Retry";
+
+        document.querySelector(".waitingBox__retryBtn").remove();
       }
     } catch (err) {
       console.log(err);
       notValid();
+
+      document.querySelector(".waitingBox__text").innerHTML =
+        "Invalid email or password";
+
+      document.querySelector(".waitingBox__loginBtn").value = "Retry";
+
+      document.querySelector(".waitingBox__retryBtn").remove();
     }
   });

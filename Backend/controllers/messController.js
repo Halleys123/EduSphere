@@ -1,12 +1,14 @@
 const messModel = require("../model/messSchema");
 
 async function getData(req, res) {
-  console.log(req.params);
   try {
-    const data = await messModel.findOne(req.params);
+    const data = await messModel.findOne({ hostel: req.user.hostel });
     res.status(200).json({
-      status: "success",
-      data: data,
+      success: true,
+      message: {
+        data: data,
+        user: req.user,
+      },
     });
   } catch (err) {
     res.status(404).json({

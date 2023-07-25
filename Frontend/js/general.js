@@ -27,7 +27,7 @@ const common = () => {
 <div class="frosted-glass"></div>`
   );
 };
-const frosted = (data) => {
+const frosted = () => {
   document.querySelector(".frosted-glass").classList.toggle("hide");
   document.querySelector(".main__content").style.overflowY = "scroll";
   document.querySelector(".waitingBox").classList.toggle("waitingBoxHide");
@@ -37,9 +37,44 @@ const notValid = () => {
     "Sorry there was an error fetching your data Please try agan later or log in again ";
   document.querySelector(".waitingBox__loadingCircle").style.display = "none";
   const cross = document.createElement("img");
-  cross.setAttribute("src", "../../icons/cross.svg");
-  document.querySelector(".waitingBox").prepend(cross);
-  console.log(err);
+  const box = document.createElement("div");
+  box.setAttribute("class", "waitingBox__crossBox");
+  cross.setAttribute("class", "waitingBox__cross");
+  cross.setAttribute(
+    "src",
+    "../../icons/icons8-cross-windows-11-color/icons8-cross-96.svg"
+  );
+  box.append(cross);
+  const loginBtn = document.createElement("input");
+  const retry = document.createElement("input");
+  const btnContainer = document.createElement("div");
+
+  loginBtn.value = "Log In";
+  loginBtn.setAttribute("type", "button");
+  loginBtn.addEventListener("click", () => {
+    location.href = "/Frontend/pages/login/login.html";
+  });
+  loginBtn.classList.add("waitingBox__Btn");
+  loginBtn.classList.add("waitingBox__loginBtn");
+
+  retry.innerHTML = "Retry";
+  retry.setAttribute("type", "button");
+  retry.addEventListener("click", () => {
+    location.reload();
+  });
+  retry.classList.add("waitingBox__retryBtn");
+  retry.classList.add("waitingBox__Btn");
+  retry.value = "Retry";
+
+  btnContainer.setAttribute("class", "waitingBox__btnContainer");
+  btnContainer.append(loginBtn);
+  btnContainer.append(retry);
+  btnContainer.setAttribute("display", "flex");
+  btnContainer.setAttribute("justify-content", "space-evenly");
+
+  document.querySelector(".waitingBox").append(btnContainer);
+  document.querySelector(".waitingBox").prepend(box);
+  // console.log(err);
 };
 const dataInsertion = (data) => {
   console.log(data.user.name);
