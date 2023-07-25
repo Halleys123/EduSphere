@@ -50,6 +50,29 @@ const messSchema = new mongoose.Schema({
     rating: [ratingItem],
     updates: [updateItem],
   },
+  complaints: [
+    {
+      heading: { type: String },
+      datePosted: { type: Date },
+      resolved: { type: Boolean, default: false },
+    },
+  ],
+  notices: [
+    {
+      head: { type: String },
+      description: { type: String },
+      file: { type: String },
+    },
+  ],
+  events: [
+    {
+      heading: { type: String },
+      date: {
+        on: { type: Date },
+        posted: { type: Date },
+      },
+    },
+  ],
 });
 
 const hostel = mongoose.model("hostels", messSchema);
