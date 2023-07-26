@@ -240,5 +240,38 @@
         }
       }
     ]
-  }
+  },
+  "complaints": [
+    {
+      "heading": "No Water",
+      "datePosted": "2018-01-01T12:00:00Z",
+      "resolved": false
+    },
+    {
+      "heading": "No Elevator",
+      "datePosted": "2018-01-01T12:00:00Z",
+      "resolved": false
+    },
+    {
+      "heading": "Very large building",
+      "datePosted": "2018-01-01T12:00:00Z",
+      "resolved": false
+    }
+  ],
+  "notices": [
+    {
+      "head": "Notice Regaurding Water",
+      "description": "There will be no water available for the next 20 days so don't make any complaints",
+      "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    }
+  ],
+  "events": [
+    {
+      "heading": "football Match",
+      "date": {
+        "on": "2018-01-01T12:00:00Z",
+        "posted": "2018-01-01T12:00:00Z"
+      }
+    }
+  ]
 }
