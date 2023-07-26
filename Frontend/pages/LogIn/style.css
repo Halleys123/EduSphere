@@ -110,3 +110,41 @@ body {
 .content__body__main__btn:focus {
   background-color: #002b5c;
 }
+.style {
+  background-color: #003681;
+  width: 120%;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3.2rem;
+}
+.style:active {
+  background-color: #002b5c;
+}
+.style:focus {
+  background-color: #002b5c;
+}
+.parent {
+  width: 100%;
+  display: flex;
+  gap: 1.8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content__body__main__btn--signUp {
+  background-color: #fff;
+  color: black;
+  outline: 1px solid #002b5c;
+  margin-top: 0;
+}
+.content__body__main__btn--signUp:hover {
+  background-color: #002b5c;
+  color: white;
+}

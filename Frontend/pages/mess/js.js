@@ -41,6 +41,12 @@ window.addEventListener("DOMContentLoaded", () => {
       document
         .querySelector(".main__content__assignments__items")
         .insertAdjacentHTML("beforeend", html);
+      console.log(data.message.user);
+      data.message.user.complaints.forEach((item) => {
+        document
+          .querySelector(".main__content__Complaints__items")
+          .insertAdjacentHTML("beforeend", complaintGen(item));
+      });
     })
     .catch((err) => {
       notValid();
@@ -71,5 +77,37 @@ ${data.message}        </p>
     </div>
   </div>
     `;
+  return html;
+}
+
+function complaintGen(data) {
+  let x = data.type;
+  let type = "";
+  if (x == "breakfast" || x == "lunch" || x == "dinner") {
+    type = "Mess";
+  } else {
+    type = "Hostel";
+  }
+  let html = `
+  <div class="main__content__Complaints--content">
+  <div class = util>
+  <div class="main__content__Complaints--content--icon">
+    <img src="../../icons/notification.svg" />
+  </div>
+  <div class="main__content__Complaints--content--text>">
+    <p class="main__content__Complaints--content--text--subject">
+      Compalint for ${type}
+    </p>
+    <p class="main__content__Complaints--content--text--date">
+      ${data.complaint}
+    </p>
+    <p class="main__content__Complaints--content--text--status">
+     ${data.status}
+    </p>
+  </div>
+  </div>
+  <button class="clearButton" id="button">Clear</button>
+</div>
+  `;
   return html;
 }
