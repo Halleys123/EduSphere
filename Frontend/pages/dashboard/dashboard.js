@@ -82,6 +82,13 @@ window.addEventListener("DOMContentLoaded", () => {
       pushTimeTable(timetableArrayGenerate(data.data.timetable));
       frosted(data);
       makeChart(data);
+      document
+        .querySelectorAll(".main__content__assignments--content")
+        .forEach((assignment) => {
+          assignment.addEventListener("click", () => {
+            location.href = "/Frontend/pages/classes/index.html";
+          });
+        });
     })
     .catch((err) => {
       notValid();

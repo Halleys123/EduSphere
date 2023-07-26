@@ -23,7 +23,7 @@ document
       console.log(data);
       if (data.success) {
         localStorage.setItem("token", data.message.token);
-        location.href = "/Frontend/pages/dashboard/index.html";
+        // location.href = "/Frontend/pages/dashboard/index.html";
       } else {
         notValid();
 
@@ -45,4 +45,15 @@ document
 
       document.querySelector(".waitingBox__retryBtn").remove();
     }
+  });
+document.addEventListener("keypress", (e) => {
+  if (e.key == "Enter") {
+    document.querySelector(".content__body__main__btn").click();
+  }
+});
+document
+  .querySelector(".content__body__main__btn--signUp")
+  .addEventListener("click", () => {
+    console.log("clicked");
+    location.href = "/Frontend/pages/signup/signup.html";
   });
