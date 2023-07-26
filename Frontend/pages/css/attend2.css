@@ -57,3 +57,16 @@
   font-weight: 400;
   line-height: normal;
 }
+.selectSubject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.3); /* Translucent background color */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
