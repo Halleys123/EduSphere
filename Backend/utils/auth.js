@@ -16,6 +16,7 @@ const auth = async (req, res, next) => {
       );
       const userModel = await createUserModel(jwtDecoded.collectionName);
       const user = await userModel.findById(jwtDecoded.id).select("-password");
+      console.log(user, jwtDecoded);
       if (user && user.logInCounter == jwtDecoded.logInCounter) {
         req.collectionName = jwtDecoded.collectionName;
         req.user = user;
