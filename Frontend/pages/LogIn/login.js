@@ -23,7 +23,7 @@ document
       console.log(data);
       if (data.success) {
         localStorage.setItem("token", data.message.token);
-        location.href = "/Frontend/pages/dashboard/index.html";
+        // location.href = "/Frontend/pages/dashboard/index.html";
       } else {
         notValid();
 
