@@ -2,6 +2,8 @@ const button = document.querySelector(".content__body__main__btn");
 const fields = document.querySelectorAll(
   ".content__body__main__item--box__input"
 );
+common();
+
 button.addEventListener("click", async (e) => {
   e.preventDefault();
   const crediantials = {};
@@ -25,7 +27,13 @@ button.addEventListener("click", async (e) => {
     alert("yup");
   } catch (err) {
     alert("no");
+    notValid();
+    document.querySelector(".waitingBox__text").innerHTML =
+      "Unable to signup please try again later";
 
+    document.querySelector(".waitingBox__loginBtn").value = "Retry";
+
+    document.querySelector(".waitingBox__retryBtn").remove();
     // console.log(err.err.body);
   }
 });
@@ -35,3 +43,9 @@ button.addEventListener("click", async (e) => {
 // "email":"fck@nith.ac.in",
 // "section":"d",
 // "session":"2333"
+document
+  .querySelector(".content__body__main__btn--signUp")
+  .addEventListener("click", () => {
+    console.log("clicked");
+    location.href = "/Frontend/pages/login/login.html";
+  });

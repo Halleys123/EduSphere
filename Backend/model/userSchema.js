@@ -40,6 +40,24 @@ const subjectItem = new mongoose.Schema({
   },
   attendance: [attendanceItem],
 });
+const complaintItem = new mongoose.Schema({
+  date: {
+    type: Date,
+  },
+  complaint: {
+    type: String,
+  },
+  type: String,
+  status: {
+    type: String,
+    enum: ["pending", "resolved"],
+    default: "pending",
+  },
+  isSeen: {
+    type: Boolean,
+    default: false,
+  },
+});
 const userSchema = new mongoose.Schema({
   hostel: { required: [true, "hostel required"], type: String },
   name: {
@@ -121,28 +139,7 @@ const userSchema = new mongoose.Schema({
     ],
     default: [],
   },
-  complaints: {
-    type: [
-      {
-        date: {
-          type: Date,
-        },
-        complaint: {
-          type: String,
-        },
-        type: String,
-        status: {
-          type: String,
-          enum: ["pending", "resolved"],
-          default: "pending",
-        },
-        isSeen: {
-          type: Boolean,
-          default: false,
-        },
-      },
-    ],
-  },
+  complaints: [complaintItem],
   attendance: [subjectItem],
 });
 userSchema.statics.loginCheck = async function (email, password) {
