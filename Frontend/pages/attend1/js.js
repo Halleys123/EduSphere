@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
   })
     .then((res) => res.json())
     .then((data) => {
+      document.querySelector(".main__content__head--text").innerHTML = subject;
+      if (!subject) {
+        document.querySelector(".subject__box__select").innerHTML = "";
+        let htm = ``;
+        data.data.user.attendance.forEach((e) => {
+          htm += `<option value="${e.subjectName}">${e.subjectName}</option>`;
+        });
+        document
+          .querySelector(".subject__box__select")
+          .insertAdjacentHTML("beforeend", htm);
+      }
       dataInsertion({ user: data });
       let att = data.data.user.attendance;
       let currentSub;

@@ -40,12 +40,19 @@
 .main__content__notices--noticeupdates {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: #ffecba;
   border: 0.1rem solid #b4b4b4;
   border-radius: 0.8rem;
   padding: 1rem;
   gap: 2rem;
+  min-height: 10rem;
+}
+.util {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
 }
 .main__content__notices--noticeupdates--title {
   font-size: 2rem;

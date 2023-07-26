@@ -85,3 +85,10 @@ const dataInsertion = (data) => {
     ".main__nav__right__right__account__details--mail"
   ).innerHTML = data.user.email;
 };
+function clearButton() {
+  document.querySelectorAll(".clearButton").forEach((item) => {
+    item.addEventListener("click", () => {
+      item.parentElement.remove();
+    });
+  });
+}
