@@ -34,9 +34,21 @@ const signUpStarts = async (req, res, next) => {
     );
     const emailOptions = {
       email: user.email,
-      subject: "Sign up to Edusphere",
-      body: `Thanks for filling in the correct details in EduSphere Now click on this link so that we can authenticate that it was you ${req.protocol}://${req.headers.host}/api/v1/auth?token=${token} (please don't click on the link if this signUp process has not been initiated by you)`,
-      html: `<h2>Thanks for filling in the correct details in EduSphere Now click on this link so that we can authenticate that it was you ${req.protocol}://${req.headers.host}/api/v1/auth?token=${token} (please don't click on the link if this signUp process has not been initiated by you)</h2>`,
+      subject: "EduSphere Authentication",
+      body: `EduSphere: Thank you ${user.name}, for prompting in EduSphere for personal Growth${req.protocol}://${req.headers.host}/api/v1/auth?token=${token} (please don't click on the link if this signUp process has not been initiated by you)`,
+      html: `<h1 style="color:black">EduSphere<h1><h3 style="color:black">Thanks you ${user.name}, for prompting in EduSphere for personal Growth </h3><h3style="color:black">If its you click on the button for verification</h3style=><br><br><a href="${req.protocol}://${req.headers.host}/api/v1/auth?token=${token}" style="background-color: #003681;
+      text-decoration:none;
+      width: 15rem;
+      height: 6.4rem;
+      border-radius: 0.4rem;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-top: 3.2rem;">Authenticate Me</a> (please don't click on the link if this signUp process has not been initiated by you)</h2>`,
     };
     sendMail(emailOptions);
     res.status(201).json({
@@ -64,8 +76,7 @@ const verificationOfLink = async (req, res, next) => {
     console.log(user);
     const temporaryUser = await temporaryUserSchema.findById(id);
     if (!temporaryUser) {
-      const err = new CustomError("SignUp unsuccessful", 401);
-      return next(err);
+      throw new CustomError("SignUp unsuccessful", 401);
     } else {
       console.log(temporaryUser);
       const users = createUserModel(temporaryUser.collectionName);
@@ -97,6 +108,10 @@ const verificationOfLink = async (req, res, next) => {
       );
     }
   } catch (err) {
+    console.log("fuck");
+    res.redirect(
+      "http://127.0.0.1:5501/Frontend/pages/Signup/signup.html?error=1"
+    );
     next(err);
   }
 };
