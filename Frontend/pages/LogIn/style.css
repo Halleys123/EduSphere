@@ -121,6 +121,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
+  /* text-decoration: non; */
   transition: all 0.3s ease-in-out;
   margin-top: 3.2rem;
 }

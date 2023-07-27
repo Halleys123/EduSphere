@@ -110,7 +110,7 @@ button.addEventListener("click", async (e) => {
         "src",
         "../../icons/icons8-cross-windows-11-color/icons8-cross-96.svg"
       );
-    notValid();
+    // notValid();
     // console.log(err.err.body);
   }
 });
