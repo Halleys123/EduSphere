@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 dotenv.config({ path: "./config.env" });
 
-const ip = process.env.IP || "127.0.0.1";
+// const ip = process.env.IP || "127.0.0.1";
 const port = process.env.PORT || 3000;
 
 const DB = process.env.DATABASE_STRING.replace(
@@ -19,6 +19,6 @@ mongoose
     console.log(err.message);
   });
 
-app.listen(port, ip, () => {
-  console.log(`Server running at http://${ip}:${port}/`);
+app.listen(port, () => {
+  // console.log(`Server running at http://${ip}:${port}/`);
 });
